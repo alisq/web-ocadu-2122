@@ -1,0 +1,372 @@
+body{
+    width: 80%;
+    margin: 20;
+
+}
+
+.letter{
+    width: 120px;
+    height: 300px;
+    margin: 0;
+    display: inline-block;
+    background-color:whitesmoke;
+    position:relative;
+}
+
+
+
+
+/* ------------------------ LETTER A */
+.letter-a-3 #a-arch {
+    position: absolute;
+    width: 80px;
+    height: 300px;
+    left: 7.5;
+    background-color: black;
+    border-radius: 20px;
+} 
+.letter-a-3 #a-space {
+    position: absolute;
+    width: 5px;
+    height: 290px;
+    left: 45;
+    top: 30;
+    background-color: white;
+    border-radius: 1.5px;
+}
+.letter-a-3 #a-leg-left{
+    position: absolute;
+    width: 45;
+    height: 30;
+    bottom:0;
+    left: 0;
+    background-color: black;
+}
+.letter-a-3 #a-leg-right{
+    position: absolute;
+    width: 45;
+    height: 30;
+    bottom: 0;
+    left: 50;
+    background-color: black;
+}
+
+.letter-a-3 #a-crossbar { 
+    position: absolute;
+    width: 40;
+    height: 40;
+    top: 110;
+    left: 40;
+    background-color: black;
+} 
+
+
+/*------------------------ LETTER B NO.3 */
+
+.letter-b-3 #b-stem {
+    position: absolute;
+    width: 37.5;
+    height: 300;
+    left: 7.5;
+    background-color: black;
+}
+.letter-b-3 #b-bowl-top {
+    position: absolute;
+    width:80;
+    height: 133;
+    left: 7.5;
+    background-color: black;
+    border-radius: 20px;
+}
+.letter-b-3 #b-bowl-bottom {
+    position: absolute;
+    width:80;
+    height: 170;
+    left: 7.5;
+    bottom:0;
+    background-color: black;
+    border-radius: 20px;
+}
+.letter-b-3 #b-counter-top {
+    position: absolute;
+    width: 5px;
+    height: 80px;
+    left: 45;
+    top: 30;
+    background-color: white;
+    border-radius: 1.5px;
+}
+.letter-b-3 #b-counter-bottom {
+    position: absolute;
+    width: 5px;
+    height: 120px;
+    left: 45;
+    bottom: 30;
+    background-color: white;
+    border-radius: 1.5px;
+}
+.letter-b-3 #b-serif-bottom {
+    position: absolute;
+    width: 37.5;
+    height: 30;
+    bottom:0;
+    left: 0;
+    background-color: black;
+}
+.letter-b-3 #b-serif-top {
+    position: absolute;
+    width: 7.5px;
+    height: 30;
+    top:0;
+    left: 0;
+    background-color: black;
+}
+
+/*------------------------ LETTER C */
+.letter-c #c-curve {
+    position: absolute;
+    width: 80px;
+    height: 300px;
+    border-radius: 20px;
+    background-color: black;
+}
+.letter-c #c-counter {
+    position: absolute;
+    width: 5px;
+    height: 240px;
+    left: 37.5px;
+    top: 30;
+    background-color: white;
+    border-radius: 1.5px;
+}
+.letter-c #c-counter-space {
+    position: absolute;
+    width: 45;
+    height: 5;
+    top: 130;
+    left: 39;
+    background-color: white;
+    border-radius: 1.5px;
+}
+
+/* ------------------------ LETTER D */
+.letter-d #d-stem {
+    position: absolute;
+    width: 37.5;
+    height: 300;
+    left: 7.5;
+    background-color: black;
+}
+.letter-d #d-serif-top { 
+    position: absolute;
+    width: 7.5px;
+    height: 30;
+    top:0;
+    left: 0;
+    background-color: black;
+}
+.letter-d #d-serif-bottom {
+    position: absolute;
+    width: 7.5px;
+    height: 30;
+    bottom:0;
+    left: 0;
+    background-color: black;
+}
+.letter-d #d-bowl { 
+    position: absolute;
+    width: 80px;
+    height: 300px;
+    left:7.5;
+    border-radius: 20px;
+    background-color: black;
+}
+.letter-d #d-counter {
+    position: absolute;
+    width: 5px;
+    height: 240px;
+    left: 45;
+    top: 30;
+    background-color: white;
+    border-radius: 1.5px;
+}
+
+/* LETTER E */
+
+.letter-e #e-serif-top {
+    position: absolute;
+    width: 7.5px;
+    height: 30;
+    top:0;
+    left: 0;
+    background-color: black;
+}
+
+.letter-e #e-serif-bottom {
+    position: absolute;
+    width: 7.5px;
+    height: 30;
+    bottom:0;
+    left: 0;
+    background-color: black;
+}
+
+.letter-e #e-stem {
+    position: absolute;
+    width: 37.5;
+    height: 300;
+    left: 7.5;
+    background-color: black;
+}
+.letter-e #e-arm { 
+    position: absolute;
+    width: 40px;
+    height: 47.5;
+    left:47.5;
+    top: 80;
+    background-color: white;
+}
+.letter-e #e-curve {
+    position: absolute;
+    width: 80px;
+    height: 300px;
+    left: 7.5;
+    border-radius: 20px;
+    background-color: black;
+}
+
+.letter-e #e-counter {
+    position: absolute;
+    width: 5px;
+    height: 240px;
+    left: 45;
+    top: 30;
+    background-color: white;
+    border-radius: 1.5px;
+}
+.letter-e #e-bar {
+    position: absolute;
+    width: 80px;
+    height: 37.5;
+    top: 85;
+    left: 7.5;
+    background-color: black;
+}
+
+
+
+
+/* LETTER O */
+.letter-o-3 #o-curve {
+    position: absolute;
+ 
+    width: 80px;
+    height: 300px;
+    left: 7.5;
+    border-radius: 20px;
+    background-color: black;
+}
+.letter-o-3 #o-counter {
+    position: absolute;
+    width: 5px;
+    height: 240px;
+    left: 45;
+    top: 30;
+    background-color: white;
+    border-radius: 1.5px;
+}
+
+
+
+
+
+
+
+
+
+
+/* LETTER A NO.1 */
+/* .letter-a #a-left-stroke {
+    position: absolute;
+    left:30;
+    top:30;
+    width: 10;
+    height: 250;
+    background: black;
+    transform: skew(-18deg);
+    border-radius: 0px 60px 0 0;
+}
+
+.letter-a #a-right-stroke{
+    position: absolute;
+    left:112;
+    top:30;
+    width: 50;
+    height: 240;
+    background: black;
+    transform: skew(18deg);
+    border-radius: 0px 60px;
+}
+
+.letter-a #a-cross-bar{
+    position:absolute;
+    width: 100;
+    height: 10;
+    left: 33;
+    top: 150;
+
+    background:black;
+} */
+
+/* LETTER A NO.2 */
+/* .letter-a-2 #a-top {
+    position: absolute;
+    width: 150;
+    left: 15;
+    top: 20;
+    height: 100;
+    border-top-left-radius: 100px;
+    border-top-right-radius: 100px;
+    border-bottom: 0;
+    border: 10px solid black;
+} */
+
+/* .letter-a-2 #a-left-stroke{
+    position: absolute;
+    width: 10;
+    height: 130;
+    background-color: black;
+    left: 15;
+    top: 140;
+    border-radius: 0 0 5px 5px;
+}
+.letter-a-2 #a-right-stroke{
+    position: absolute;
+    width: 10;
+    height: 130;
+    background-color: black;
+    right: 15;
+    top: 140;
+    border-radius: 0 0 5px 5px;
+} */
+
+/* LETTER I NO.1 */
+
+/* .letter-i #i-body {
+    position: absolute;
+    width: 10;
+    height: 150;
+    left: 95;
+    top: 120;
+    background-color: black;
+    border-radius: 5px;
+}
+.letter-i #i-dot {
+    position: absolute;
+    width: 20;
+    height: 20;
+    left: 95;
+    top: 75;
+    border: 10px solid black;
+    border-radius: 50%;
+} */
