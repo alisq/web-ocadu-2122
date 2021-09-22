@@ -219,8 +219,8 @@ body{
     position: absolute;
     width: 40px;
     height: 47.5;
-    left:47.5;
-    top: 80;
+    left: 47.5;
+    top: 110;
     background-color: white;
 }
 .letter-e #e-curve {
@@ -245,7 +245,7 @@ body{
     position: absolute;
     width: 80px;
     height: 37.5;
-    top: 85;
+    top: 115;
     left: 7.5;
     background-color: black;
 }
@@ -261,7 +261,7 @@ body{
 .letter-f #f-top {
     position: absolute;
     width: 80px;
-    height: 80px;
+    height: 105px;
     left: 7.5;
     border-radius: 0 20px 0 0;
     background-color: black;
@@ -270,18 +270,18 @@ body{
     position: absolute;
     width: 80px;
     height: 37.5;
-    top: 85;
+    top: 110;
     left: 7.5;
     background-color: black;
 }
 .letter-f #f-counter {
     position: absolute;
     width: 5px;
-    height: 55px;
+    height: 76px;
     left: 45;
     top: 30;
     background-color: white;
-    border-radius:1.5px 1.5px 0 0;
+    border-radius: 1.5px 1.5px 0 0;
 }
 .letter-f #f-stand {
     position: absolute;
@@ -620,7 +620,128 @@ body{
     background-color: white;
     border-radius: 0 0 1.5px 1.5px;
 } 
+/* LETTER M */
+.letter-m {
+    width: 200px !important;
+}
+.letter-m #m-stem {
+    position: absolute;
+    width: 37.5;
+    height: 300;
+    left: 7.5;
+    background-color: black;
+}
+.letter-m #leg-1 {
+    position: absolute;
+    width: 80px;
+    height: 300px;
+    left: 7.5;
+    border-radius: 0 40px 0 0;
+    background-color: black;
+}
+.letter-m #leg-2 {
+    position: absolute;
+    width: 80px;
+    height: 300px;
+    left: 50;
+    border-radius: 40px 20px 0 0;
+    background-color: black;
+}
+.letter-m #serif-top {
+    position: absolute;
+    width: 7.5px;
+    height: 30;
+    top:0;
+    left: 0;
+    background-color: black;
+}
+.letter-m #serif-bottom {
+    position: absolute;
+    width: 7.5px;
+    height: 30;
+    bottom:0;
+    left: 0;
+    background-color: black;
+}
+.letter-m #counter-1 {
+    position: absolute;
+    width: 5px;
+    height: 270px;
+    left: 45;
+    top: 30;
+    background-color: white;
+    border-radius: 1.5px 1.5px 0 0;
+}
+.letter-m #counter-2 {
+    position: absolute;
+    width: 5px;
+    height: 270px;
+    left: 87.50;
+    top: 30;
+    background-color: white;
+    border-radius: 1.5px 1.5px 0 0;
+}
+.letter-m #serif-right {
+    position: absolute;
+    width: 7.5px;
+    height: 30;
+    bottom:0;
+    left: 130;
+    background-color: black;
+}
 
+
+/* LETTER N */
+.letter-n #n-stem {
+    position: absolute;
+    width: 37.5;
+    height: 300;
+    left: 7.5;
+    background-color: black;
+}
+.letter-n #leg {
+    position: absolute;
+    width: 80px;
+    height: 300px;
+    left: 7.5;
+    border-radius: 0 20px 0 0;
+    background-color: black;
+}
+
+.letter-n #serif-top {
+    position: absolute;
+    width: 7.5px;
+    height: 30;
+    top:0;
+    left: 0;
+    background-color: black;
+}
+.letter-n #serif-bottom {
+    position: absolute;
+    width: 7.5px;
+    height: 30;
+    bottom:0;
+    left: 0;
+    background-color: black;
+}
+.letter-n #counter-1 {
+    position: absolute;
+    width: 5px;
+    height: 270px;
+    left: 45;
+    top: 30;
+    background-color: white;
+    border-radius: 1.5px 1.5px 0 0;
+}
+
+.letter-n #serif-right {
+    position: absolute;
+    width: 7.5px;
+    height: 30;
+    bottom:0;
+    left: 87.5;
+    background-color: black;
+}
 /* LETTER O */
 .letter-o-3 #o-curve {
     position: absolute;
@@ -898,20 +1019,23 @@ body{
 }
 
 /* LETTER V */
+.letter-v {
+    width: 140px !important;
+}
 .letter-v #left-stroke {
     position: absolute;
     width: 37.5;
     height: 270;
-    left: 17;
+    left: 19;
     bottom: 0;
     background-color: black;
-    transform: skew(4deg);
+    transform: skew(5deg);
+    border-radius: 0 0 0 18px;
 }
-
 
 .letter-v #left-serif{
     position: absolute;
-    width: 45;
+    width: 52.5;
     height: 30;
     top:0;
     left: 0;
@@ -921,77 +1045,190 @@ body{
     position: absolute;
     width: 37.5;
     height: 270;
-    left: 45.5;
+    left: 70.5;
     bottom: 0;
     background-color: black;
-    transform: skew(-4deg);
+    transform: skew(-5deg);
+    border-radius: 0 0 18px 0;
+
 }
 .letter-v #right-serif{
     position: absolute;
-    width: 45;
+    width: 52.5;
     height: 30;
     top: 0;
-    left: 55;
+    left: 74.25;
     background-color: black;
 }
 
 /* LETTER W */
 .letter-w {
-    width: 300px !important;
+    width: 250px !important;
 }
 .letter-w #left-stroke {
     position: absolute;
-    width: 80px;
-    height: 300px;
-    left: 7.5;
+    width: 37.5;
+    height: 270;
+    left: 19;
+    bottom: 0;
     background-color: black;
-    border-radius:0 0 20px 20px;
+    transform: skew(5deg);
+    border-radius: 0 0 0 20px;
 }
 
+.letter-w #left-mid-stroke{
+    position: absolute;
+    width: 37.5;
+    height: 270;
+    left: 69.5;
+    bottom: 0;
+    background-color: black;
+    transform: skew(-6deg);
+    border-radius: 0 0 20px 0;
+}
+.letter-w #right-mid-stroke {
+    position: absolute;
+    width: 37.5;
+    height: 270;
+    left: 110;
+    bottom: 0;
+    background-color: black;
+    transform: skew(6deg);
+    border-radius: 0 0 0 20px;
+}
 .letter-w #right-stroke{
     position: absolute;
-    width: 80px;
-    height: 300px;
-    left: 45;
+    width: 37.5;
+    height: 270;
+    left: 159.5;
+    bottom: 0;
     background-color: black;
-    border-radius:0 0 20px 20px;
-}
-.letter-w #left-space{
-    position: absolute;
-    width: 5px;
-    height: 270px;
-    left: 45;
-    top: 0;
-    background-color: white;
-    border-radius:0 0 1.5px 1.5px;
+    transform: skew(-5deg);
+    border-radius: 0 0 20px 0;
 }
 
-.letter-w #right-space{
-    position: absolute;
-    width: 5px;
-    height: 270px;
-    left: 87.5;
-    top: 0;
-    background-color: white;
-    border-radius:0 0 1.5px 1.5px;
-}
 .letter-w #left-serif{
     position: absolute;
-    width: 45;
+    width: 52.5;
+    height: 30;
+    top: 0;
+    left: 0;
+    background-color: black;
+}
+.letter-w #mid-serif {
+    position: absolute;
+    width: 66.5px;
+    height: 30px;
+    top: 0;
+    left: 75px;
+    background-color: black;
+}
+.letter-w #right-serif{
+    position: absolute;
+    width: 52.5;
+    height: 30;
+    top: 0;
+    left: 164.75px;
+    background-color: black;
+}
+ /* LETTER X */
+.letter-x {
+    width: 150px !important;
+}
+.letter-x #leg-1{
+    position: absolute;
+    width: 37.5;
+    height: 300;
+    left: 50;
+    background-color: black;
+    transform: skew(-14.3deg);
+}
+.letter-x #leg-2 {
+    position: absolute;
+    width: 37.5;
+    height: 300;
+    left: 50;
+    background-color: black;
+    transform: skew(14.3deg);
+}
+
+
+/* LETTER Y */
+.letter-y {
+    width: 150px !important;
+}
+.letter-y #stem {
+    position: absolute;
+    width: 37.5;
+    height: 300;
+    left: 50px;
+    background-color: black;
+}
+.letter-y #serif-top { 
+    position: absolute;
+    width: 7.5px;
     height: 30;
     top:0;
     left: 0;
     background-color: black;
 }
-.letter-w #right-serif{
+.letter-y #serif-bottom {
     position: absolute;
-    width: 45;
-    height: 30;
-    top: 0;
-    left: 66;
+    width: 42.5px;
+    height: 37.5;
+    left: 7.5;
+    bottom:0;
+    border-radius:0 0 0 20px;
     background-color: black;
 }
-
+.letter-y #bowl { 
+    position: absolute;
+    width: 80px;
+    height: 180px;
+    left: 7.5px;
+    border-radius:0 0 0 20px;
+    background-color: black;
+}
+.letter-y #counter {
+    position: absolute;
+    width: 5px;
+    height: 140px;
+    left: 45;
+    top: 0;
+    background-color: white;
+    border-radius:0 0 1.5px 1.5px;
+}
+.letter-y #hook {
+    position: absolute;
+    width: 37.5px;
+    height: 115px;
+    left: 7.5px;
+    bottom: 0px;
+    border-radius:0 0 0 20px;
+    background-color: black;
+}
+.letter-x .serifs {
+    position: absolute;
+    width: 45px;
+    height: 30;
+    background-color: black;
+}
+.letter-x #serif-1 {
+    top:0;
+    left: 0;
+}
+.letter-x #serif-2 {
+    top:0;
+    left: 87.5;
+}
+.letter-x #serif-3 {
+    bottom:0;
+    left: 0;
+}
+.letter-x #serif-4 {
+    left: 87.5;
+    bottom: 0 ;
+}
 
 /* LETTER Z */
 .letter-z #stroke{
