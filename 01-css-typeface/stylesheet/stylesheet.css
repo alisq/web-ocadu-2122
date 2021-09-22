@@ -776,6 +776,67 @@ body{
     bottom: 0 ;
 }
 
+/* LETTER S */
+#s-spine-top {
+    position: absolute;
+    width: 80px;
+    height: 37.5px;
+    background-color: black;
+    left: 0px;
+    top: 0;
+    border-radius: 20px 20px 0 0;
+}
+#s-spine-middle {
+    position: absolute;
+    width: 80px;
+    height: 37.5px;
+    background-color: black;
+    left: 0px;
+    top: 110px !important;
+    border-radius:0 20px 0 20px;
+}
+#s-spine-bottom {
+    position: absolute;
+    width: 80px;
+    height: 37.5px;
+    background-color: black;
+    left: 0px;
+    bottom: 0px !important;
+    border-radius:0 0 20px 20px ;
+}
+.s-connector-1 {
+    position: absolute;
+    width: 37.5px;
+    height: 72.5px;
+    top: 37.5px;
+    left:0px;
+    background-color: black;
+}
+.s-connector-2 {
+    position: absolute;
+    width: 37.5px;
+    height: 115px;
+    background-color: black;
+    left: 42.5px;
+    bottom: 37.5px;
+}
+.letter-s .s-serif {
+    position: absolute;
+    width: 37.5px;
+    height: 67.5px;
+
+    background-color: black;
+}
+.letter-s #top {
+    top: 37.5px;
+    left: 42.5px;
+}
+.letter-s #bottom {
+    height: 110px !important;
+    bottom: 37.5px;
+    left: 0px;
+}
+
 /* LETTER T */ 
 .letter-t #t-stem {
     position: absolute;
@@ -792,8 +853,6 @@ body{
     top: 0;
     background-color: black;
 }
-
-
 .letter-t #t-serif {
     position: absolute;
     width: 53.5px;
@@ -802,7 +861,6 @@ body{
     bottom: 0;
     background-color: black;
 }
-
 
 /* LETTER U */
 .letter-u #u-arch {
@@ -838,6 +896,102 @@ body{
     left: 50;
     background-color: black;
 }
+
+/* LETTER V */
+.letter-v #left-stroke {
+    position: absolute;
+    width: 37.5;
+    height: 270;
+    left: 17;
+    bottom: 0;
+    background-color: black;
+    transform: skew(4deg);
+}
+
+
+.letter-v #left-serif{
+    position: absolute;
+    width: 45;
+    height: 30;
+    top:0;
+    left: 0;
+    background-color: black;
+}
+.letter-v #right-stroke{
+    position: absolute;
+    width: 37.5;
+    height: 270;
+    left: 45.5;
+    bottom: 0;
+    background-color: black;
+    transform: skew(-4deg);
+}
+.letter-v #right-serif{
+    position: absolute;
+    width: 45;
+    height: 30;
+    top: 0;
+    left: 55;
+    background-color: black;
+}
+
+/* LETTER W */
+.letter-w {
+    width: 300px !important;
+}
+.letter-w #left-stroke {
+    position: absolute;
+    width: 80px;
+    height: 300px;
+    left: 7.5;
+    background-color: black;
+    border-radius:0 0 20px 20px;
+}
+
+.letter-w #right-stroke{
+    position: absolute;
+    width: 80px;
+    height: 300px;
+    left: 45;
+    background-color: black;
+    border-radius:0 0 20px 20px;
+}
+.letter-w #left-space{
+    position: absolute;
+    width: 5px;
+    height: 270px;
+    left: 45;
+    top: 0;
+    background-color: white;
+    border-radius:0 0 1.5px 1.5px;
+}
+
+.letter-w #right-space{
+    position: absolute;
+    width: 5px;
+    height: 270px;
+    left: 87.5;
+    top: 0;
+    background-color: white;
+    border-radius:0 0 1.5px 1.5px;
+}
+.letter-w #left-serif{
+    position: absolute;
+    width: 45;
+    height: 30;
+    top:0;
+    left: 0;
+    background-color: black;
+}
+.letter-w #right-serif{
+    position: absolute;
+    width: 45;
+    height: 30;
+    top: 0;
+    left: 66;
+    background-color: black;
+}
+
 
 /* LETTER Z */
 .letter-z #stroke{
