@@ -1219,15 +1219,15 @@ body{
 }
 .letter-x #serif-2 {
     top:0;
-    left: 87.5;
+    left: 92.5;
 }
 .letter-x #serif-3 {
     bottom:0;
     left: 0;
 }
 .letter-x #serif-4 {
-    left: 87.5;
-    bottom: 0 ;
+    left: 92.5px;
+    bottom: 0;
 }
 
 /* LETTER Z */
