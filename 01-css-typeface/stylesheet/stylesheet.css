@@ -1,21 +1,21 @@
 body{
-    width: 80%;
-    margin: 20;
+    width: 95%;
+    margin: 10px;
 
 }
 
 .letter{
-    width: 120px;
+    width: 105px;
     height: 300px;
-    margin: 0;
     display: inline-block;
-    background-color:whitesmoke;
-    position:relative;
+    margin: 8px 0;
+    /* background-color:royalblue; */
+    position: relative;
 }
 
 
 /* ------------------------ LETTER A */
-.letter-a-3 #a-arch {
+.letter-a #a-arch {
     position: absolute;
     width: 80px;
     height: 300px;
@@ -23,7 +23,7 @@ body{
     background-color: black;
     border-radius: 20px;
 } 
-.letter-a-3 #a-space {
+.letter-a #a-space {
     position: absolute;
     width: 5px;
     height: 290px;
@@ -32,7 +32,7 @@ body{
     background-color: white;
     border-radius: 1.5px;
 }
-.letter-a-3 #a-leg-left{
+.letter-a #a-leg-left{
     position: absolute;
     width: 45;
     height: 30;
@@ -40,7 +40,7 @@ body{
     left: 0;
     background-color: black;
 }
-.letter-a-3 #a-leg-right{
+.letter-a #a-leg-right{
     position: absolute;
     width: 45;
     height: 30;
@@ -49,7 +49,7 @@ body{
     background-color: black;
 }
 
-.letter-a-3 #a-crossbar { 
+.letter-a #a-crossbar { 
     position: absolute;
     width: 40;
     height: 40;
@@ -61,14 +61,14 @@ body{
 
 /*------------------------ LETTER B NO.3 */
 
-.letter-b-3 #b-stem {
+.letter-b #b-stem {
     position: absolute;
     width: 37.5;
     height: 300;
     left: 7.5;
     background-color: black;
 }
-.letter-b-3 #b-bowl-top {
+.letter-b #b-bowl-top {
     position: absolute;
     width:80;
     height: 133;
@@ -76,7 +76,7 @@ body{
     background-color: black;
     border-radius: 20px;
 }
-.letter-b-3 #b-bowl-bottom {
+.letter-b #b-bowl-bottom {
     position: absolute;
     width:80;
     height: 170;
@@ -85,7 +85,7 @@ body{
     background-color: black;
     border-radius: 20px;
 }
-.letter-b-3 #b-counter-top {
+.letter-b #b-counter-top {
     position: absolute;
     width: 5px;
     height: 80px;
@@ -94,7 +94,7 @@ body{
     background-color: white;
     border-radius: 1.5px;
 }
-.letter-b-3 #b-counter-bottom {
+.letter-b #b-counter-bottom {
     position: absolute;
     width: 5px;
     height: 120px;
@@ -103,7 +103,7 @@ body{
     background-color: white;
     border-radius: 1.5px;
 }
-.letter-b-3 #b-serif-bottom {
+.letter-b #b-serif-bottom {
     position: absolute;
     width: 37.5;
     height: 30;
@@ -111,7 +111,7 @@ body{
     left: 0;
     background-color: black;
 }
-.letter-b-3 #b-serif-top {
+.letter-b #b-serif-top {
     position: absolute;
     width: 7.5px;
     height: 30;
@@ -121,6 +121,9 @@ body{
 }
 
 /*------------------------ LETTER C */
+.letter-c {
+    width: 90px;
+}
 .letter-c #c-curve {
     position: absolute;
     width: 80px;
@@ -148,6 +151,9 @@ body{
 }
 
 /* ------------------------ LETTER D */
+.letter-d {
+    width: 100px;
+}
 .letter-d #d-stem {
     position: absolute;
     width: 37.5;
@@ -190,6 +196,9 @@ body{
 }
 
 /* LETTER E */
+.letter-e {
+    width: 97px;
+}
 .letter-e #e-serif-top {
     position: absolute;
     width: 7.5px;
@@ -251,6 +260,9 @@ body{
 }
 
 /* LETTER F */
+.letter-f {
+    width: 100px;
+}
 .letter-f #f-stem {
     position: absolute;
     width: 37.5;
@@ -293,6 +305,9 @@ body{
 }
 
 /* LETTER G */
+.letter-g {
+    width: 95px;
+}
 .letter-g #g-curve {
     position: absolute;
     width: 80px;
@@ -364,6 +379,7 @@ body{
 }
 
 /* LETTER H */
+
 .letter-h #h-shape {
     position: absolute;
     width: 80px;
@@ -411,6 +427,9 @@ body{
 }
 
 /* LETTER I */
+.letter-i { 
+    width: 70px;
+}
 .letter-i #i-stem {
     position: absolute;
     width: 37.5;
@@ -471,6 +490,9 @@ body{
 }
 
 /* LETTER J */
+.letter-j {
+    width: 90px;
+}
 .letter-j #j-body {
     position: absolute;
     width: 42.5px;
@@ -578,6 +600,9 @@ body{
 }
 
 /* LETTER L */ 
+.letter-l { 
+    width: 95px;
+}
 .letter-l #l-stem {
     position: absolute;
     width: 37.5;
@@ -622,7 +647,7 @@ body{
 } 
 /* LETTER M */
 .letter-m {
-    width: 200px !important;
+    width: 145px !important;
 }
 .letter-m #m-stem {
     position: absolute;
@@ -692,6 +717,9 @@ body{
 
 
 /* LETTER N */
+.letter-n {
+    width: 97px;
+}
 .letter-n #n-stem {
     position: absolute;
     width: 37.5;
@@ -743,7 +771,10 @@ body{
     background-color: black;
 }
 /* LETTER O */
-.letter-o-3 #o-curve {
+.letter-o {
+    width: 100px;
+}
+.letter-o #o-curve {
     position: absolute;
  
     width: 80px;
@@ -752,7 +783,7 @@ body{
     border-radius: 20px;
     background-color: black;
 }
-.letter-o-3 #o-counter {
+.letter-o #o-counter {
     position: absolute;
     width: 5px;
     height: 240px;
@@ -763,6 +794,9 @@ body{
 }
 
 /* LETTER P */
+.letter-p {
+    width: 90px;
+}
 .letter-p #p-stem {
     position: absolute;
     width: 37.5;
@@ -805,6 +839,9 @@ body{
 }
 
 /* LETTER Q */
+.letter-q {
+    width: 110px;
+}
 .letter-q #q-curve {
     position: absolute;
     width: 80px;
@@ -898,6 +935,9 @@ body{
 }
 
 /* LETTER S */
+.letter-s {
+    width: 87px;
+}
 #s-spine-top {
     position: absolute;
     width: 80px;
@@ -1063,7 +1103,7 @@ body{
 
 /* LETTER W */
 .letter-w {
-    width: 250px !important;
+    width: 220px !important;
 }
 .letter-w #left-stroke {
     position: absolute;
@@ -1133,7 +1173,7 @@ body{
 }
  /* LETTER X */
 .letter-x {
-    width: 150px !important;
+    width: 145px !important;
 }
 .letter-x #leg-1{
     position: absolute;
@@ -1155,7 +1195,7 @@ body{
 
 /* LETTER Y */
 .letter-y {
-    width: 150px !important;
+    width: 100px !important;
 }
 .letter-y #stem {
     position: absolute;
