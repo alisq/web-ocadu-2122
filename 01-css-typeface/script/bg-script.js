@@ -11,14 +11,19 @@ function setup(){
 }
 
 function draw(){
-    col1 = map(mouseX, 0, canvas.width, 0,200);
+    col1 = map(mouseX, 0, canvas.width, 0,255);
+    col3 = map(mouseX, 0, canvas.width, 100,255);
     col2 = map(mouseY, 0, canvas.height, 50,200);
-    colorSpace = color(col1, col2, 250);
+    colorSpace = color(col1, col2, col3);
     background(colorSpace);
-    negativeSpace = selectAll('.negative');
+   
+    negativeSpace = selectAll('#landing-page .negative');
     for(i=0; i<negativeSpace.length; i++){
         negativeSpace[i].style('background-color',colorSpace);
     }
+    
+    fill(240, 248, 255);
+    circle(mouseX, mouseY, 10,10);
 
 
     
