@@ -3,171 +3,96 @@
         <meta charset="utf-8">
         <meta http-equiv="x-ua-compatible" content="ie=edge">
         <title> OCADU'22 RESERCH METHODS FOR GRAPHIC DESIGN </title>
-        
         <link rel="stylesheet" type="text/css" href="stylesheet/alphabet-sheet.css" >  
-        <link rel="stylesheet" type="text/css" href="stylesheet/stylesheet.css" >
+        <link rel="stylesheet" type="text/css" href="stylesheet/style-sheet.css" >
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@100,600;70,741&display=swap" rel="stylesheet"> 
-        <script src="libraries/p5.min.js"></script>
-        <script src="libraries/p5.sound.min.js"></script>
-        <script src="script/bg-script.js"></script>
-  
+        <link href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@100,350;100,335;66.5,710&display=swap" rel="stylesheet">
     </header>
     <body>
-        <div id="landing-page">
-            <section id="class-title">
-                <div class="landing-title-1">
-                    <div class="letter letter-r">
-                        <div class="positive" id="r-stem"></div>
-                        <div class="positive" id="r-top"></div>
-                        <div class="positive" id="r-bottom"></div>
-                        <div class="negative" id="r-space-top"></div>
-                        <div class="negative" id="r-space-bottom"></div>
-                        <div id="serifs" class="serif-1 positive"></div>
-                        <div id="serifs" class="serif-3 positive"></div>
-                        <div id="serifs" class="serif-4 positive"></div>
+        <div class="wrapper">
+            <div class="landing-wrapper">
+                
+                <div class="landing-area">
+
+                    <!-- TITLE -->
+                    <div class="title-wrapper">
+                        <!-- REASEARCH -->
+                    <div class="landing-title-1">
+                        <div class="letter letter-r">
+                            <div class="positive" id="r-stem"></div>
+                            <div class="positive" id="r-top"></div>
+                            <div class="positive" id="r-bottom"></div>
+                            <div class="negative" id="r-space-top"></div>
+                            <div class="negative" id="r-space-bottom"></div>
+                            <div id="serifs" class="serif-1 positive"></div>
+                            <div id="serifs" class="serif-3 positive"></div>
+                            <div id="serifs" class="serif-4 positive"></div>
+                        </div>
+                        <div class="letter letter-e">
+                            <div class="positive" id="e-stem"></div>
+                            <div class="positive" id="e-curve"></div>
+                            <div class="negative" id="e-counter"></div>
+                            <div class="negative" id="e-arm"></div>
+                            <div class="positive" id="e-bar"></div>
+                            <div class="positive" id="e-serif-top"></div>
+                            <div class="positive" id="e-serif-bottom"></div>
+                        </div>
+                        <div class="letter letter-s">
+                            <div class="positive"  id="s-spine-top"></div>
+                            <div class="positive"  id="s-spine-middle"></div>
+                            <div class="positive"  id="s-spine-bottom"></div>
+                            <div class="positive"  id="s-connector-1"></div>
+                            <div class="positive"  id="s-connector-2"></div>
+                            <div class="s-serif positive" id="top"></div>
+                            <div class="s-serif positive" id="bottom"></div>
+                
+                        </div>
+                        <div class="letter letter-e" id="e-2">
+                            <div class="positive" id="e-stem"></div>
+                            <div class="positive" id="e-curve"></div>
+                            <div class="negative" id="e-counter"></div>
+                            <div class="negative" id="e-arm"></div>
+                            <div class="positive" id="e-bar"></div>
+                            <div class="positive" id="e-serif-top"></div>
+                            <div class="positive" id="e-serif-bottom"></div>
+                        </div>
+                        <div class="letter letter-a">
+                            <div class="positive"  id="a-arch"></div>
+                            <div class="negative" id="a-space"></div>
+                            <!-- <div class="positive"  id="a-leg-left"></div> -->
+                            <div class="positive"  id="a-leg-right"></div>
+                            <div class="positive"  id="a-crossbar"></div>            
+                        </div>
+                        <div class="letter letter-r">
+                            <div class="positive" id="r-stem"></div>
+                            <div class="positive" id="r-top"></div>
+                            <div class="positive" id="r-bottom"></div>
+                            <div class="negative" id="r-space-top"></div>
+                            <div class="negative" id="r-space-bottom"></div>
+                            <div id="serifs" class="serif-1 positive"></div>
+                            <div id="serifs" class="serif-3 positive"></div>
+                            <div id="serifs" class="serif-4 positive"></div>
+                        </div>
+                        <div class="letter letter-c">
+                            <div class="positive" id="c-curve"></div>
+                            <div class="negative" id="c-counter"></div>
+                            <div class="negative" id="c-counter-space"></div>
+                        </div>
+                        <div class="letter letter-h">
+                            <div class="positive" id="h-shape"></div>
+                            <div class="negative" id="h-space"></div>
+                            <div class="positive" id="h-bar"></div>
+                            <div id="h-serif" class="serif-1 positive"></div>
+                            <div id="h-serif" class="serif-2 positive"></div>
+                            <div id="h-serif" class="serif-3 positive"></div>
+                            <div id="h-serif" class="serif-4 positive"></div>
+                
+                        </div>
                     </div>
-                    <div class="letter letter-e">
-                        <div class="positive" id="e-stem"></div>
-                        <div class="positive" id="e-curve"></div>
-                        <div class="negative" id="e-counter"></div>
-                        <div class="negative" id="e-arm"></div>
-                        <div class="positive" id="e-bar"></div>
-                        <div class="positive" id="e-serif-top"></div>
-                        <div class="positive" id="e-serif-bottom"></div>
-                    </div>
-                    <div class="letter letter-s">
-                        <div class="positive"  id="s-spine-top"></div>
-                        <div class="positive"  id="s-spine-middle"></div>
-                        <div class="positive"  id="s-spine-bottom"></div>
-                        <div class="positive"  id="s-connector-1"></div>
-                        <div class="positive"  id="s-connector-2"></div>
-                        <div class="s-serif positive" id="top"></div>
-                        <div class="s-serif positive" id="bottom"></div>
-            
-                    </div>
-                    <div class="letter letter-e" id="e-2">
-                        <div class="positive" id="e-stem"></div>
-                        <div class="positive" id="e-curve"></div>
-                        <div class="negative" id="e-counter"></div>
-                        <div class="negative" id="e-arm"></div>
-                        <div class="positive" id="e-bar"></div>
-                        <div class="positive" id="e-serif-top"></div>
-                        <div class="positive" id="e-serif-bottom"></div>
-                    </div>
-                    <div class="letter letter-a">
-                        <div class="positive"  id="a-arch"></div>
-                        <div class="negative" id="a-space"></div>
-                        <!-- <div class="positive"  id="a-leg-left"></div> -->
-                        <div class="positive"  id="a-leg-right"></div>
-                        <div class="positive"  id="a-crossbar"></div>            
-                    </div>
-                    <div class="letter letter-r">
-                        <div class="positive" id="r-stem"></div>
-                        <div class="positive" id="r-top"></div>
-                        <div class="positive" id="r-bottom"></div>
-                        <div class="negative" id="r-space-top"></div>
-                        <div class="negative" id="r-space-bottom"></div>
-                        <div id="serifs" class="serif-1 positive"></div>
-                        <div id="serifs" class="serif-3 positive"></div>
-                        <div id="serifs" class="serif-4 positive"></div>
-                    </div>
-                    <div class="letter letter-c">
-                        <div class="positive" id="c-curve"></div>
-                        <div class="negative" id="c-counter"></div>
-                        <div class="negative" id="c-counter-space"></div>
-                    </div>
-                    <div class="letter letter-h">
-                        <div class="positive" id="h-shape"></div>
-                        <div class="negative" id="h-space"></div>
-                        <div class="positive" id="h-bar"></div>
-                        <div id="h-serif" class="serif-1 positive"></div>
-                        <div id="h-serif" class="serif-2 positive"></div>
-                        <div id="h-serif" class="serif-3 positive"></div>
-                        <div id="h-serif" class="serif-4 positive"></div>
-            
-                    </div>
-                </div>
-                <div class="landing-title-2">
-                    <div class="letter letter-m">
-                        <div class="positive" id="m-stem"></div>
-                        <div class="positive" id="leg-1"></div>
-                        <div class="positive" id="leg-2"></div>
-                        <div class="positive" id="serif-top"></div>
-                        <div class="positive" id="serif-bottom"></div>
-                        <div class="negative" id="counter-1"></div>
-                        <div class="negative" id="counter-2"></div>
-                        <div class="positive" id="serif-right"></div>
-                    </div>
-                    <div class="letter letter-e">
-                        <div class="positive" id="e-stem"></div>
-                        <div class="positive" id="e-curve"></div>
-                        <div class="negative" id="e-counter"></div>
-                        <div class="negative" id="e-arm"></div>
-                        <div class="positive" id="e-bar"></div>
-                        <div class="positive" id="e-serif-top"></div>
-                        <div class="positive" id="e-serif-bottom"></div>
-                    </div>
-                    <div class="letter letter-t">
-                        <div class="positive" id="t-stem"></div>
-                        <div class="positive" id="t-bar"></div>
-                        <!-- <div id="t-serif"></div> -->
-                    </div>
-                    <div class="letter letter-h">
-                        <div class="positive" id="h-shape"></div>
-                        <div class="negative" id="h-space"></div>
-                        <div class="positive" id="h-bar"></div>
-                        <div id="h-serif" class="serif-1 positive"></div>
-                        <div id="h-serif" class="serif-2 positive"></div>
-                        <div id="h-serif" class="serif-3 positive"></div>
-                        <div id="h-serif" class="serif-4 positive"></div>
-            
-                    </div>
-                    <div class="letter letter-o">
-                        <div class="positive"  id="o-curve"></div>
-                        <div class="negative" id="o-counter"></div>
-                    </div> 
-                    <div class="letter letter-d">
-                        <div class="positive" id="d-stem"></div>
-                        <div class="positive" id="d-bowl"></div>
-                        <div class="negative" id="d-counter"></div>
-                        <div class="positive" id="d-serif-top"></div>
-                        <div class="positive" id="d-serif-bottom"></div> 
-                    </div>
-                    <div class="letter letter-s">
-                        <div class="positive"  id="s-spine-top"></div>
-                        <div class="positive"  id="s-spine-middle"></div>
-                        <div class="positive"  id="s-spine-bottom"></div>
-                        <div class="positive"  id="s-connector-1"></div>
-                        <div class="positive"  id="s-connector-2"></div>
-                        <div class="s-serif positive" id="top"></div>
-                        <div class="s-serif positive" id="bottom"></div>
-            
-                    </div>
-                    <div class ="letter text-container"> 
-                        <p class="title">FOR <br> GRAPHIC <br> DESIGN </p>
-                    </div>
-                </div>
-            </section>
-            <section class="event-title">
-                <div id="event-container">
-                    <h2> GUEST <br> LECTURE <br> SERIES</h2>
-                </div>
-                <div id="school-container">
-                    <p>OCAD U <br> FALL 2021 </p>
-                </div>
-            </section>
-        </div>
-        <div class="information-page">
-            <section class="event-info" id="one">
-                <div class="information">
-                    <div id="date"></div>
-                    <div id="introduction"><p>Mindy Seu is a designer and researcher. She holds an M.Des from Harvard’s Graduate School of Design and a B.A. in Design Media Arts from University of California, Los Angeles. As a fellow at the Harvard Law School’s Berkman Klein Center for the Internet & Society, she began the digital Cyberfeminism Index, which was later commissioned by Rhizome and presented at the New Museum. The printed publication Cyberfeminism Catalog is a 2021 recipient of the Graham Foundation Grant and will be published in Fall 2022. Seu has been a fellow at the Internet Archive, as well as a designer for 2×4’s Interactive Media team and the Museum of Modern Art’s in-house design studio. She has given lectures and workshops at Barbican Center, CalArts, Parsons, Pratt, RISD, Berkeley Art Museum, among others. Seu is currently an Assistant Professor at Rutgers Mason Gross School of the Arts and Critic at Yale School of Art.</p>
-                    </div>
-                </div>
-                <div class="guest-name">
-                    <div class="first-name">
+
+                    <!-- METHODS FOR GRAPHIC DESIGN -->
+                    <div class="landing-title-2">
                         <div class="letter letter-m">
                             <div class="positive" id="m-stem"></div>
                             <div class="positive" id="leg-1"></div>
@@ -178,81 +103,379 @@
                             <div class="negative" id="counter-2"></div>
                             <div class="positive" id="serif-right"></div>
                         </div>
-                        <div class="letter letter-i">
-                            <div id="i-stem"></div>
-                            <div id="i-serif" class="top"></div>
-                            <div id="i-serif" class="bottom"></div>
+                        <div class="letter letter-e">
+                            <div class="positive" id="e-stem"></div>
+                            <div class="positive" id="e-curve"></div>
+                            <div class="negative" id="e-counter"></div>
+                            <div class="negative" id="e-arm"></div>
+                            <div class="positive" id="e-bar"></div>
+                            <div class="positive" id="e-serif-top"></div>
+                            <div class="positive" id="e-serif-bottom"></div>
                         </div>
-                        <div class="letter letter-n">
-                            <div id="n-stem"></div>
-                            <div id="leg"></div>
-                            <div id="serif-top"></div>
-                            <div id="serif-bottom"></div>
-                            <div id="counter-1"></div>
-                            <div id="serif-right"></div>
+                        <div class="letter letter-t">
+                            <div class="positive" id="t-stem"></div>
+                            <div class="positive" id="t-bar"></div>
+                            <!-- <div id="t-serif"></div> -->
                         </div>
+                        <div class="letter letter-h">
+                            <div class="positive" id="h-shape"></div>
+                            <div class="negative" id="h-space"></div>
+                            <div class="positive" id="h-bar"></div>
+                            <div id="h-serif" class="serif-1 positive"></div>
+                            <div id="h-serif" class="serif-2 positive"></div>
+                            <div id="h-serif" class="serif-3 positive"></div>
+                            <div id="h-serif" class="serif-4 positive"></div>
+                
+                        </div>
+                        <div class="letter letter-o">
+                            <div class="positive"  id="o-curve"></div>
+                            <div class="negative" id="o-counter"></div>
+                        </div> 
                         <div class="letter letter-d">
-                            <div id="d-stem"></div>
-                            <div id="d-bowl"></div>
-                            <div id="d-counter"></div>
-                            <div id="d-serif-top"></div>
-                            <div id="d-serif-bottom"></div> 
+                            <div class="positive" id="d-stem"></div>
+                            <div class="positive" id="d-bowl"></div>
+                            <div class="negative" id="d-counter"></div>
+                            <div class="positive" id="d-serif-top"></div>
+                            <div class="positive" id="d-serif-bottom"></div> 
                         </div>
-                        <div class="letter letter-y">
-                            <div id="stem"></div>
-                            <div id="serif-top"></div>
-                            <div id="serif-bottom"></div>
-                            <div id="bowl"></div>
-                            <div id="counter"></div>
-                            <div id="hook"></div>
+                        <div class="letter letter-s">
+                            <div class="positive"  id="s-spine-top"></div>
+                            <div class="positive"  id="s-spine-middle"></div>
+                            <div class="positive"  id="s-spine-bottom"></div>
+                            <div class="positive"  id="s-connector-1"></div>
+                            <div class="positive"  id="s-connector-2"></div>
+                            <div class="s-serif positive" id="top"></div>
+                            <div class="s-serif positive" id="bottom"></div>
+                
+                        </div>
+
+                        <div class ="letter text-container"> 
+                            <p class="title">FOR <br> GRAPHIC <br> DESIGN </p>
                         </div>
                     </div>
-                    <div class="last-name">
-                        <div class="letter letter-s">
-                            <div id="s-spine-top"></div>
-                            <div id="s-spine-middle"></div>
-                            <div id="s-spine-bottom"></div>
-                            <div id="s-connector-1"></div>
-                            <div id="s-connector-2"></div>
-                            <div class="s-serif" id="top"></div>
-                            <div class="s-serif" id="bottom"></div>
+                    </div>
+                    
+                    <!-- EVENT -->
+                    <div class="event-title">
+                        <div id="event-container">
+                            <h2> GUEST <br> LECTURE <br> SERIES</h2>
                         </div>
-                        <div class="letter letter-e">
-                            <div  id="e-stem"></div>
-                            <div id="e-curve"></div>
-                            <div id="e-counter"></div>
-                            <div id="e-arm"></div>
-                            <div  id="e-bar"></div>
-                            <div  id="e-serif-top"></div>
-                            <div id="e-serif-bottom"></div>
+                        <div id="school-container">
+                            <p>OCAD U <br> FALL 2021 </p>
                         </div>
-                        <div class="letter letter-u">
-                            <div id="u-arch"></div>
-                            <div id="u-space"></div>
-                            <div id="u-top-left"></div>
-                            <div id="u-top-right"></div>
-                        </div>
+                    </div>
+
+                </div>
+                
+            </div>
+
+            <div class="info-container">
+                <div class="guest-name" id="guest-1">
+                    <div class="letter letter-m">
+                        <div class="positive" id="m-stem"></div>
+                        <div class="positive" id="leg-1"></div>
+                        <div class="positive" id="leg-2"></div>
+                        <div class="positive" id="serif-top"></div>
+                        <div class="positive" id="serif-bottom"></div>
+                        <div class="negative" id="counter-1"></div>
+                        <div class="negative" id="counter-2"></div>
+                        <div class="positive" id="serif-right"></div>
+                    </div>
+                    <div class="letter letter-i">
+                        <div class="positive" id="i-stem"></div>
+                        <div class="positive top" id="i-serif" ></div>
+                        <div class="positive bottom" id="i-serif"></div>
+                    </div>
+                    <div class="letter letter-n">
+                        <div class="positive" id="n-stem"></div>
+                        <div class="positive" id="leg"></div>
+                        <div class="positive" id="serif-top"></div>
+                        <div class="positive" id="serif-bottom"></div>
+                        <div class="negative" id="counter-1"></div>
+                        <div class="positive" id="serif-right"></div>
+                    </div>
+                    <div class="letter letter-d">
+                        <div class="positive" id="d-stem"></div>
+                        <div class="positive" id="d-bowl"></div>
+                        <div class="negative" id="d-counter"></div>
+                        <div class="positive" id="d-serif-top"></div>
+                        <div class="positive" id="d-serif-bottom"></div> 
+                    </div>
+                    <div class="letter letter-y">
+                        <div class="positive" id="stem"></div>
+                        <div class="positive" id="serif-top"></div>
+                        <div class="positive" id="serif-bottom"></div>
+                        <div class="positive" id="bowl"></div>
+                        <div  class="negative" id="counter"></div>
+                        <div class="positive" id="hook"></div>
+                    </div>
+                    <div class="letter" id="space-bar">
+                    </div>
+                    <div class="letter"></div>
+                    <div class="letter letter-s">
+                        <div class="positive"  id="s-spine-top"></div>
+                        <div class="positive"  id="s-spine-middle"></div>
+                        <div class="positive"  id="s-spine-bottom"></div>
+                        <div class="positive"  id="s-connector-1"></div>
+                        <div class="positive"  id="s-connector-2"></div>
+                        <div class="s-serif positive" id="top"></div>
+                        <div class="s-serif positive" id="bottom"></div>
+            
+                    </div>
+                    <div class="letter letter-e">
+                        <div class="positive" id="e-stem"></div>
+                        <div class="positive" id="e-curve"></div>
+                        <div class="negative" id="e-counter"></div>
+                        <div class="negative" id="e-arm"></div>
+                        <div class="positive" id="e-bar"></div>
+                        <div class="positive" id="e-serif-top"></div>
+                        <div class="positive" id="e-serif-bottom"></div>
+                    </div>
+                    <div class="letter letter-u">
+                        <div class="positive" id="u-arch"></div>
+                        <div class="negative" id="u-space"></div>
+                        <div class="positive" id="u-top-left"></div>
+                        <div class="positive" id="u-top-right"></div>
+                    </div>
+                </div>
+                <div class="event-info" id="day-1">
+                    <p>Mindy Seu is a designer and researcher. 
+                        She holds an M.Des from Harvard’s Graduate School of Design and a B.A. in Design Media Arts from University of California, Los Angeles. 
+                        As a fellow at the Harvard Law School’s Berkman Klein Center for the Internet & Society, she began the digital Cyberfeminism Index, which was later commissioned by Rhizome and presented at the New Museum. 
+                        The printed publication Cyberfeminism Catalog is a 2021 recipient of the Graham Foundation Grant and will be published in Fall 2022. Seu has been a fellow at the Internet Archive, as well as a designer for 2×4’s Interactive Media team and the Museum of Modern Art’s in-house design studio. 
+                        She has given lectures and workshops at Barbican Center, CalArts, Parsons, Pratt, RISD, Berkeley Art Museum, among others. Seu is currently an Assistant Professor at Rutgers Mason Gross School of the Arts and Critic at Yale School of Art.
+                    </p>
+                </div>
+                <div class="event-info" id="day-2">
+                    <p>Danielle Aubert is a graphic designer whose work examines materials, methods of production, machines and labor. She is the author of The Detroit Printing Co-op: The Politics of the Joy of Printing (2019: Inventory Press), Marking the Dispossessed (2015: Passenger Books), and 16 Months Worth of Drawings in Microsoft Excel (2006: Various Projects). She is co-author, with Lana Cavar and Natasha Chandani, of Thanks for the View, Mr. Mies (2012: Metropolis Books). She is an Associate Professor of Graphic Design at Wayne State University, in Detroit. From 2013-15 she was a Fellow in the Creative and Performing Art at the Lewis Center for the Arts at Princeton University.
+                    </p>
+                </div>
+                <div class="guest-name" id="guest-2">
+                    <div class="letter letter-d">
+                        <div class="positive" id="d-stem"></div>
+                        <div class="positive" id="d-bowl"></div>
+                        <div class="negative" id="d-counter"></div>
+                        <div class="positive" id="d-serif-top"></div>
+                        <div class="positive" id="d-serif-bottom"></div> 
+                    </div>
+                    <div class="letter letter-a">
+                        <div class="positive"  id="a-arch"></div>
+                        <div class="negative" id="a-space"></div>
+                        <!-- <div class="positive"  id="a-leg-left"></div> -->
+                        <div class="positive"  id="a-leg-right"></div>
+                        <div class="positive"  id="a-crossbar"></div>            
+                    </div>             
+                    <div class="letter letter-n">
+                        <div class="positive" id="n-stem"></div>
+                        <div class="positive" id="leg"></div>
+                        <div class="positive" id="serif-top"></div>
+                        <div class="positive" id="serif-bottom"></div>
+                        <div class="negative" id="counter-1"></div>
+                        <div class="positive" id="serif-right"></div>
+                    </div>
+                    <div class="letter letter-i">
+                        <div class="positive" id="i-stem"></div>
+                        <div class="positive top" id="i-serif" ></div>
+                        <div class="positive bottom" id="i-serif"></div>
+                    </div>
+                    <div class="letter letter-e">
+                        <div class="positive" id="e-stem"></div>
+                        <div class="positive" id="e-curve"></div>
+                        <div class="negative" id="e-counter"></div>
+                        <div class="negative" id="e-arm"></div>
+                        <div class="positive" id="e-bar"></div>
+                        <div class="positive" id="e-serif-top"></div>
+                        <div class="positive" id="e-serif-bottom"></div>
+                    </div>
+                    <div class="letter letter-l">
+                        <div class="positive" id="l-stem"></div>
+                        <div class="positive" id="l-top"></div>
+                        <div class="positive" id="l-stand"></div>
+                        <div  class="negative" id="l-space"></div>
+                        <div class="positive" id="l-serif"></div>
+                    </div>
+                    <div class="letter letter-l">
+                        <div class="positive" id="l-stem"></div>
+                        <div class="positive" id="l-top"></div>
+                        <div class="positive" id="l-stand"></div>
+                        <div  class="negative" id="l-space"></div>
+                        <div class="positive" id="l-serif"></div>
+                    </div>
+                    <div class="letter letter-e">
+                        <div class="positive" id="e-stem"></div>
+                        <div class="positive" id="e-curve"></div>
+                        <div class="negative" id="e-counter"></div>
+                        <div class="negative" id="e-arm"></div>
+                        <div class="positive" id="e-bar"></div>
+                        <div class="positive" id="e-serif-top"></div>
+                        <div class="positive" id="e-serif-bottom"></div>
+                    </div>
+
+                    <div class="letter" style="width: 5.5em;"></div>
+
+                    <div class="letter letter-a">
+                        <div class="positive"  id="a-arch"></div>
+                        <div class="negative" id="a-space"></div>
+                        <!-- <div class="positive"  id="a-leg-left"></div> -->
+                        <div class="positive"  id="a-leg-right"></div>
+                        <div class="positive"  id="a-crossbar"></div>            
+                    </div>    
+                    <div class="letter letter-u">
+                        <div class="positive" id="u-arch"></div>
+                        <div class="negative" id="u-space"></div>
+                        <div class="positive" id="u-top-left"></div>
+                        <div class="positive" id="u-top-right"></div>
+                    </div>
+                    <div class="letter letter-b">
+                        <div class="positive" id="b-stem"></div>
+                        <div class="positive" id="b-bowl-top"></div>
+                        <div class="positive" id="b-bowl-bottom"></div>
+                        <div class="negative" id="b-counter-top"></div>
+                        <div class="negative" id="b-counter-bottom"></div>
+                        <div class="positive" id="b-serif-top"></div>  
+                        <div class="positive" id="b-serif-bottom"></div>  
+                    </div>
+                    <div class="letter letter-e">
+                        <div class="positive" id="e-stem"></div>
+                        <div class="positive" id="e-curve"></div>
+                        <div class="negative" id="e-counter"></div>
+                        <div class="negative" id="e-arm"></div>
+                        <div class="positive" id="e-bar"></div>
+                        <div class="positive" id="e-serif-top"></div>
+                        <div class="positive" id="e-serif-bottom"></div>
+                    </div>
+                    <div class="letter letter-r">
+                        <div class="positive" id="r-stem"></div>
+                        <div class="positive" id="r-top"></div>
+                        <div class="positive" id="r-bottom"></div>
+                        <div class="negative" id="r-space-top"></div>
+                        <div class="negative" id="r-space-bottom"></div>
+                        <div id="serifs" class="serif-1 positive"></div>
+                        <div id="serifs" class="serif-3 positive"></div>
+                        <div id="serifs" class="serif-4 positive"></div>
+                    </div>
+                    <div class="letter letter-t">
+                        <div class="positive" id="t-stem"></div>
+                        <div class="positive" id="t-bar"></div>
+                        <!-- <div id="t-serif"></div> -->
                     </div>
 
 
                 </div>
-            </section>
-            <section class="event-info" id="two"></section>
-            <section class="event-info" id="three"></section>
-            <section class="event-info" id="four"></section>
+                <div class="guest-name" id="guest-3">
+                    <div class="letter letter-k">
+                        <div class="positive" id="k-stem"></div>
+                        <div class="positive" id="k-top"></div>
+                        <div class="positive" id="k-bottom"></div>
+                        <div class="negative"  id="k-space-top"></div>
+                        <div class="negative" id="k-space-bottom"></div>
+                        <div id="serifs" class="serif-1 positive"></div>
+                        <div id="serifs" class="serif-2 positive "></div>
+                        <div id="serifs" class="serif-3 positive"></div>
+                        <div id="serifs" class="serif-4 positive"></div>
+                    </div>
+                    <div class="letter letter-e">
+                        <div class="positive" id="e-stem"></div>
+                        <div class="positive" id="e-curve"></div>
+                        <div class="negative" id="e-counter"></div>
+                        <div class="negative" id="e-arm"></div>
+                        <div class="positive" id="e-bar"></div>
+                        <div class="positive" id="e-serif-top"></div>
+                        <div class="positive" id="e-serif-bottom"></div>
+                    </div>
+                    <div class="letter letter-l">
+                        <div class="positive" id="l-stem"></div>
+                        <div class="positive" id="l-top"></div>
+                        <div class="positive" id="l-stand"></div>
+                        <div  class="negative" id="l-space"></div>
+                        <div class="positive" id="l-serif"></div>
+                    </div>
+                    <div class="letter letter-l">
+                        <div class="positive" id="l-stem"></div>
+                        <div class="positive" id="l-top"></div>
+                        <div class="positive" id="l-stand"></div>
+                        <div  class="negative" id="l-space"></div>
+                        <div class="positive" id="l-serif"></div>
+                    </div>
+                    <div class="letter letter-y">
+                        <div class="positive" id="stem"></div>
+                        <div class="positive" id="serif-top"></div>
+                        <div class="positive" id="serif-bottom"></div>
+                        <div class="positive" id="bowl"></div>
+                        <div  class="negative" id="counter"></div>
+                        <div class="positive" id="hook"></div>
+                    </div>
+                    <div class="letter" style="width: 20em;"></div>
+
+                    <div class="letter letter-w">
+                        <div class="positive" id="left-stroke"></div>
+                        <div class="positive" id="left-mid-stroke"></div>
+                        <div class="positive" id="right-mid-stroke"></div>
+                        <div class="positive" id="right-stroke"></div>
+                        <div class="positive" id="left-serif"></div>
+                        <div class="positive" id="right-serif"></div>
+                        <div class="positive" id="mid-serif"></div>
+                    </div>
+                    <div class="letter letter-a">
+                        <div class="positive"  id="a-arch"></div>
+                        <div class="negative" id="a-space"></div>
+                        <!-- <div class="positive"  id="a-leg-left"></div> -->
+                        <div class="positive"  id="a-leg-right"></div>
+                        <div class="positive"  id="a-crossbar"></div>            
+                    </div>  
+                    <div class="letter letter-l" id="l-three">
+                        <div class="positive" id="l-stem"></div>
+                        <div class="positive" id="l-top"></div>
+                        <div class="positive" id="l-stand"></div>
+                        <div  class="negative" id="l-space"></div>
+                        <div class="positive" id="l-serif"></div>
+                    </div>
+                    <div class="letter letter-t" id="t-three">
+                        <div class="positive" id="t-stem"></div>
+                        <div class="positive" id="t-bar"></div>
+                        <!-- <div id="t-serif"></div> -->
+                    </div>
+                    <div class="letter letter-e">
+                        <div class="positive" id="e-stem"></div>
+                        <div class="positive" id="e-curve"></div>
+                        <div class="negative" id="e-counter"></div>
+                        <div class="negative" id="e-arm"></div>
+                        <div class="positive" id="e-bar"></div>
+                        <div class="positive" id="e-serif-top"></div>
+                        <div class="positive" id="e-serif-bottom"></div>
+                    </div>
+                    <div class="letter letter-r">
+                        <div class="positive" id="r-stem"></div>
+                        <div class="positive" id="r-top"></div>
+                        <div class="positive" id="r-bottom"></div>
+                        <div class="negative" id="r-space-top"></div>
+                        <div class="negative" id="r-space-bottom"></div>
+                        <div id="serifs" class="serif-1 positive"></div>
+                        <div id="serifs" class="serif-3 positive"></div>
+                        <div id="serifs" class="serif-4 positive"></div>
+                    </div>
+                    <div class="letter letter-s">
+                        <div class="positive"  id="s-spine-top"></div>
+                        <div class="positive"  id="s-spine-middle"></div>
+                        <div class="positive"  id="s-spine-bottom"></div>
+                        <div class="positive"  id="s-connector-1"></div>
+                        <div class="positive"  id="s-connector-2"></div>
+                        <div class="s-serif positive" id="top"></div>
+                        <div class="s-serif positive" id="bottom"></div>
+            
+                    </div>
+                </div>
+                <div class="event-info" id="day-3"></div>
+                <div class="event-info" id="day-4"></div>
+            </div>
         </div>
-
         <script src="script/script.js"></script>
-
-    </body>
+     </body>
 </html>
 
-<!--Reference:
+<!-- REFERENCE
+LAYOUT: 
+https://20.zweikommasieben.ch/
+http://www.indexartbookfair.com/kurimanzutto-2020/
 
-    
-    
-    Adjacent Sibling combinator:
-    https://developer.mozilla.org/en-US/docs/Web/CSS/Adjacent_sibling_combinator
-
-    Hover + div:
-    https://www.w3schools.com/howto/howto_css_display_element_hover.asp -->
+-->

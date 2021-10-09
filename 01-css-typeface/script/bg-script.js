@@ -1,10 +1,11 @@
 var canvas;
 let negativeSpace;
 let col1, col2;
+let h = document.body.scrollHeight;
+
 
 function setup(){
-    canvas = createCanvas(windowWidth, windowHeight);
-    canvas.parent("landing-page");
+    canvas = createCanvas(windowWidth, h+500);
     canvas.position(0,0);
     canvas.style('z-index',-1);
 
@@ -15,9 +16,9 @@ function draw(){
     col3 = map(mouseX, 0, canvas.width, 100,255);
     col2 = map(mouseY, 0, canvas.height, 50,200);
     colorSpace = color(col1, col2, col3);
-    background(colorSpace);
-   
-    negativeSpace = selectAll('#landing-page .negative');
+    canvas.background(colorSpace);
+    document.body.style.backgroundColor = colorSpace;
+    negativeSpace = selectAll('.negative');
     for(i=0; i<negativeSpace.length; i++){
         negativeSpace[i].style('background-color',colorSpace);
     }
@@ -29,5 +30,5 @@ function draw(){
     
 }
 function windowResized() {
-    resizeCanvas(windowWidth, windowHeight);
+    resizeCanvas(windowWidth, h);
   }

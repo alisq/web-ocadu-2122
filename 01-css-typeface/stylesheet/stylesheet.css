@@ -5,10 +5,11 @@
 
 
 body { 
-    height: 400vh;
-    width: 850;
-    margin: 0;
-    background-color:aliceblue;
+    height: 300vh;
+    max-height: 400vh;
+    width: 95%;
+    margin: auto;
+    background-color: black;
     display: flex;
     flex-direction: column;
 }
@@ -29,14 +30,14 @@ body {
     width: 100%;
     float: left;
 }
-.landing-title-1 >.letter-r {
-    width: 6em;
+.letter-r {
+    width: 5.9em;
 }
 .landing-title-1 > #e-2 {
     width: 5.5em; 
 }
 
-.landing-title-1 >.letter-a {
+.letter-a {
     width: 6em;
 }
 .landing-title-1 >.letter-e {
@@ -68,6 +69,29 @@ body {
     width: 4.25em;
 }
 
+.letter-i { 
+    width: 3.4em;
+}
+.letter-d, .letter-n { 
+    width: 5.5em;
+}
+.letter-s {
+    width: 5.2em;
+}
+.letter-e {
+    width: 5.7em;
+}
+.letter-l {
+    width: 5.2em;
+}
+.letter-u, .letter-b { 
+    width: 6em;
+}
+.letter-k { 
+    width: 6em;
+}
+
+
 .text-container {
     width: 150;
     vertical-align: top;
@@ -84,6 +108,7 @@ body {
 }
 .event-title { 
     width: 45%;
+    height: 80%;
     position:relative;
 }
 #event-container {
@@ -126,77 +151,106 @@ body {
     line-height: 1; 
 }
 
+/*  INFORMATION PAGE */
+main { 
+    display:block;
+    width: 100%;
+    height: 100%;
+
+}
 .information-page { 
-    display: block;
-    margin: 10 0;
-    height: 300vh;
+
+    margin: 10;
     width: 100vw;
+    height: 100%;
     position: relative;
+    overflow: visible;
 }
 .event-info {
     position:relative;
     min-width: 92vw;
     min-height: 38em;
     padding: 3em;
-    display:grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
+    display: block;
 }
-.landing-page .guest-name {
-    width: auto; 
-}
-
-
-/*  INFORMATION PAGE */
-
-#one, #three {
-    background-color:aliceblue ;
-}
-#two, #four {
-    background-color:rgb(247, 126, 28) ;
+#space-bar {
+    width: 2em;
 }
 
-#one .guest-name {
-    margin-left: 2em;
+.guest-name {
+    width: 100em;
+    height: auto;
 }
 
-#one .information { 
-    
-    grid-column: 1/ span 3;
+.event-info .information {
+    margin: auto;
+    top: 20%;
+    width: 55%;
+    position: absolute;
 }
 
-#introduction {
-    padding: 5em;
-    font-family: 'Archivo', sans-serif; 
-    font-weight: 400;
-    font-size: 20px;
-    font-variation-settings: 'wdth' 100;
-    line-height: 1.3;
-    text-shadow: 0 0 15px black;
-    color: transparent;
+#one {
+    order:0;
 }
-
-
-
-
-
+#two {
+    order:1;
+}
+#three {
+    order:2;
+}
+#four {
+    order:3; 
+}
 #one .first-name, .last-name {
     width: 35em;
 }
 
-#one .first-name > .letter-i { 
-    width: 3.6em;
-}
-#one .first-name > .letter-d, .letter-n { 
-    width: 5.5em;
-}
-#one .last-name > .letter-s {
-    width: 5.2em;
-}
-#one .last-name > .letter-e {
-    width: 5.7em;
+#one .guest-name {
+    top: 10em;
+    position: relative;
+    /* transform: rotate(7deg) scale(0.7); */
 }
 
 
+
+#one .information, #three .information {
+    left: 22.5%;
+}
+
+#two .information, #four .information {
+    left: 22.5%;
+}
+#two .guest-name {
+    width: 50em;
+}
+
+#introduction {
+    width: 100%;
+    font-family: 'Archivo', sans-serif; 
+    font-weight: 340;
+    font-size: 1em;
+    font-variation-settings: 'wdth' 120;
+    line-height: 1.6;
+    color: aliceblue;
+    /* text-shadow: 0 0 15px black;
+    color: transparent; */
+}
+
+
+
+
+
+
+/* THREE */
+#three .guest-name {
+    width: 50em;
+}
+#l-three {
+    width: 4.3em;
+}
+#t-three {
+    width: 5em;
+}
 
 
 /* .positive {
