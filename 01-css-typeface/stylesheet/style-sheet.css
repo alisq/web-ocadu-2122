@@ -38,6 +38,13 @@ body {
     background-color: rgb(41, 63, 230);
     /* border: 1px solid black;    */
 }
+div ::-webkit-scrollbar {
+    display: none;
+}
+div{
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+}
 
 /* LANDING PAGE - TITLE */
 .title-wrapper {
@@ -207,8 +214,7 @@ body {
     transform: translate(50px,320px);
     z-index: 9;
     text-align: center;
-    -ms-overflow-style: none;  /* IE and Edge */
-    scrollbar-width: none;  /* Firefox */
+
     transition: ease all .5s;
 }
 
@@ -417,9 +423,7 @@ body {
     clear: both;
 }
 
-div ::-webkit-scrollbar {
-    display: none;
-}
+
 /* FOOTER */
 .footer {
     clear: left;
