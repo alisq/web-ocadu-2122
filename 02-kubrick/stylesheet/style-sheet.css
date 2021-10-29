@@ -1,0 +1,15 @@
+body {
+    margin: 0;
+}
+.wrapper {
+    position: relative;
+    width: 95vw;
+    height: 95vh;
+    margin: 2.5vh 2.5vw;
+    padding: 0;
+    background-color:antiquewhite;
+}
+
+h1 { 
+    margin: 0;
+}
