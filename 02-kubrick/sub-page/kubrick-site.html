@@ -1,3 +1,6 @@
+<!-- TO DO -->
+<!-- 1. add subtag class into each li div -->
+
 <html>
     <header>
         <meta charset="utf-8">
@@ -8,6 +11,8 @@
         <title>The Kubrick Site</title>
 
         <link rel="stylesheet" type="text/css" href="../stylesheet/stylesheet-2.css">
+
+        <script src="../script/script-2.js"></script>
 
     </header>
 
@@ -26,46 +31,54 @@
 
             <!-- Tags -->
                 <nav class="navigation-tags">
-                    <button>About</button>
-                    <button>Essays & Articles</button>
-                    <button>Debate & Discusions</button>
-                    <button>Reviews & Press Materials</button>
-                    <button>Scripts & Transcripts</button>
-                    <button>Interviews & Depositions</button>
-                    <button>Additional Resources</button>
-                    <button>FAQ</button>
+                    <button class="tag-button">About</button>
+                    <button class="tag-button">Essays & Articles</button>
+                    <button class="tag-button">Debate & Discusions</button>
+                    <button class="tag-button">Reviews & Press Materials</button>
+                    <button class="tag-button">Scripts & Transcripts</button>
+                    <button class="tag-button">Interviews & Depositions</button>
+                    <button class="tag-button">Additional Resources</button>
+                    <button class="tag-button extra-bt">FAQ</button>
                 </nav>
 
             <!-- Sub-tags -->
                 <div class="tags-container">
                 
                 <!-- ABOUT -->
-                    <article class="tag-content about">
+                    <article class="tag-content about-tag" id="about">
                         <p>The Kubrick Site has been established as a non-profit resource archive for documentary materials regarding, in whole or in part, the work of the late American film director and producer Stanley Kubrick (1928-1999). We'd like to thank the literally thousands of readers and participants whose contributions appear in these pages.
-                            <br> The materials archived, stored, and presented here, are copyrighted by their respective contributors, and may not be saved, re-transmitted, republished, or reformatted by any means, electronic or mechanical. This site offers broad public access to these materials exclusively as a contribution to education and scholarship, and for the private, non-profit use of the academic community. The materials in this collection are protected by the U.S. Copyright Law (Title 17, U.S. Code) and/or by the copyright or neighboring-rights laws of other nations. More information regarding U.S. Copyright Law is provided by the U.S. Copyright Office at the Library of Congress. Additionally, the reproduction of most of these materials is restricted by terms of reprint & distribution agreements, authors' restrictions, privacy and publicity rights, and such licensing and/or trademarks agreements as may obtain. This restriction includes the use of these images in other publications, both print and electronic, including rebroadcast on the World Wide Web, as well as their archiving for public availability in Internet-accessible FTP or HTTP directories. 
+
+                        </p>
+                        <br>
+                            <blockquote>“Sometimes the truth of the thing is not so much in the think of it, but in the feel of it.”     
+                            </blockquote>
+                        <p>The materials archived, stored, and presented here, are copyrighted by their respective contributors, and may not be saved, re-transmitted, republished, or reformatted by any means, electronic or mechanical. This site offers broad public access to these materials exclusively as a contribution to education and scholarship, and for the private, non-profit use of the academic community. The materials in this collection are protected by the U.S. Copyright Law (Title 17, U.S. Code) and/or by the copyright or neighboring-rights laws of other nations. More information regarding U.S. Copyright Law is provided by the U.S. Copyright Office at the Library of Congress. Additionally, the reproduction of most of these materials is restricted by terms of reprint & distribution agreements, authors' restrictions, privacy and publicity rights, and such licensing and/or trademarks agreements as may obtain. This restriction includes the use of these images in other publications, both print and electronic, including rebroadcast on the World Wide Web, as well as their archiving for public availability in Internet-accessible FTP or HTTP directories. 
+                            <br>
                             <br>  The views and opinions of the respective contributors are their own, and may not necessarily represent the views of other contributors, the views of Time Warner Corporation or Turner Broadcasting (including but not limited to it's staff and employees), nor the personal viewpoint of this archive's editor. Being an educational resource, this archive site offers, and is interested only in, textual or other documentary materials relating to Kubrick's films, which are offered free of charge, and for which the copyrights are secured and may be licensed and/or reassigned. We do not purchase such materials, nor memorabilia, nor copies of the films themselves in any format, nor does this site offer to trade or to assist others in trading such materials; inquiries regarding such may be directed to the newsgroup itself. 
+                            <br>
                             <br> There are two additional sites which will be of interest; they are Warner Bros. official website for the films of Stanley Kubrick www.kubrickfilms.com and the Kubrick Multimedia Archive. The latter was the inspiration for the present textual site. Those wishing to view graphics, sounds, and other such media should go there. 
+                            <br>
                             <br> The Kubrick Site is a privately maintained project, it has no affiliation with Hobby Films Ltd., Warner Bros. Studios, Turner Broadcasting, or Time Warner Communications Corporation (including their subsidiaries or their licensees) should be inferred. 
                         </p>
                     </article>
 
                 <!-- ESSAYS -->
-                    <nav class="tag-content essays">
+                    <nav class="tag-content essay-tag">
                         <ul class="article-tags">
-                            <li>Excerpt from Cinema 2: The Time Image by Gilles Deleuze </li>
-                            <li>Excerpts from The Wolf at the Door: Stanley Kubrick, History, and the Holocaust by Geoffrey Cocks</li>
-                            <li>The Country of the Mind in Kubrick's Fear and Desire by Jason Sperb</li>
-                            <li>The Herd and Self-Reflexiveness by David Gerrard</li>
-                            <li>On Viewing The Killing by Jules N. Binoculas</li>
-                            <li>Three Essays on Spartacus by Duncan L. Cooper</li>
-                            <li>Two Views of Lolita by Robert Stam and Thomas Allen Nelson</li>
-                            <li>A Commentary on Dr. Strangelove by Brian Siano</li>
-                            <li>Kubrick's Psychopaths by Gordon Banks</li>
-                            <li>Just what the Doctor Ordered... by Jeremy Boxen</li>
-                            <li>Dr. Strangelove by Sharon Ghamari-Tabrizi </li>
-                            <li>Last Secrets of Strangelove Revealed Grant B. Stillman</li>
-                            <li> Kubrick and The Fantastic by Michel Ciment</li>
-                            <li> 2001 and the Motif of The Voyage by Claudia Zimny</li>
+                            <li class="subtag">Excerpt from Cinema 2: The Time Image by Gilles Deleuze </li>
+                            <li class="subtag">Excerpts from The Wolf at the Door: Stanley Kubrick, History, and the Holocaust by Geoffrey Cocks</li>
+                            <li class="subtag">The Country of the Mind in Kubrick's Fear and Desire by Jason Sperb</li>
+                            <li class="subtag">The Herd and Self-Reflexiveness by David Gerrard</li>
+                            <li class="subtag">On Viewing The Killing by Jules N. Binoculas</li>
+                            <li class="subtag">Three Essays on Spartacus by Duncan L. Cooper</li>
+                            <li class="subtag">Two Views of Lolita by Robert Stam and Thomas Allen Nelson</li>
+                            <li class="subtag">A Commentary on Dr. Strangelove by Brian Siano</li>
+                            <li class="subtag">Kubrick's Psychopaths by Gordon Banks</li>
+                            <li class="subtag">Just what the Doctor Ordered... by Jeremy Boxen</li>
+                            <li class="subtag">Dr. Strangelove by Sharon Ghamari-Tabrizi </li>
+                            <li class="subtag">Last Secrets of Strangelove Revealed Grant B. Stillman</li>
+                            <li class="subtag"> Kubrick and The Fantastic by Michel Ciment</li>
+                            <li class="subtag"> 2001 and the Motif of The Voyage by Claudia Zimny</li>
                             <li>2001: Margaret Stackhouse's Reflections</li>
                             <li>2001: A Progressive Analysis by Sandra Venturini</li>
                             <li>2001: A Cold Descent by Mark Crispin Miller</li>
@@ -121,12 +134,12 @@
             </section>
             
         <!-- Right -->
-            <section class="righ-content">
-                <article>
-                    <div class="article-text">
-                        <h3>Excerpt from Cinema 2, The Time Image</h3>
+            <section class="right-content" >
+                <article class="article">
+                    <div class="article-text text-01">
+                        <h3>Excerpt from Cinema 2, <br> The Time Image</h3>
                         <p> by Gilles Deleuze</p>
-                        <p>  Excerpt taken from the book: Cinema 2: The Time-Image, by Gilles Deleuze, trans. 
+                        <p id="fiy-text">  Excerpt taken from the book: Cinema 2: The Time-Image, by Gilles Deleuze, trans. 
                             Hugh Tomlinson and Robert Galeta, Althone Press, 1985, pp. 204–215. All Rights Reserved </p>
                         <p> ‘Give me a brain’ would be the other figure of modern cinema, [the first figure is the body - Ed] 
                             This is an intellectual cinema, as distinct from the physical cinema. Experimental cinema is shared 
