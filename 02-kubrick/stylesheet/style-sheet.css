@@ -1,15 +1,78 @@
 body {
     margin: 0;
+    background: linear-gradient(180deg, rgba(36, 54, 120, 0) 0%, rgba(36, 54, 120, 0.8) 100%);    flex-direction: column;
+    height: 100%;
+
+
 }
+
+@import url('https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:ital@0;1&family=IBM+Plex+Mono:wght@400;500;600&family=IBM+Plex+Sans:ital@0;1&display=swap');
+
 .wrapper {
     position: relative;
-    width: 95vw;
-    height: 95vh;
-    margin: 2.5vh 2.5vw;
-    padding: 0;
-    background-color:antiquewhite;
+    top: 25%;
+    margin: auto;
+    max-width: 40em;
+    max-height: 35em;
+    padding: 2em;
+    background-color: white;
+    border-radius: 2.5em;
+    box-shadow: 0 5px 13px 0 rgba(0,0,0,0.2), 0 5px 16px 0 rgba(0,0,0,0.19);    
+
+    
 }
 
 h1 { 
     margin: 0;
+    color: black;
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 3.5em;
+    padding: 0.5em 0;
+    text-align:center;
 }
+
+.description { 
+    color: black;
+    font-family: 'IBM Plex Sans', sans-serif;
+    font-size: 0.95em;
+    line-height: 2.3;
+    text-align:center;
+
+}
+
+.door { 
+    width: auto;
+    padding: 0.4em 1em; 
+    border: 2px solid black;
+    border-radius: 15px;
+    white-space: nowrap;
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 0.9em;
+    
+
+    overflow-x: hidden;
+}
+
+a:link { 
+    text-decoration: none;
+    color:rgba(36, 54, 120, 0.8);
+}
+
+a:visited {
+    text-decoration: none;
+    color: rgba(36, 54, 120, 0.8);
+  }
+
+.door:hover { 
+    background-color: black;
+}
+
+a:hover {
+    text-decoration: none;
+    color: rgb(238, 111, 20);
+  }
+
+  a:active {
+    text-decoration: none;
+    color: blue;
+  }

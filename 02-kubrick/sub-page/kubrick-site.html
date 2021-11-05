@@ -2,7 +2,7 @@
 <!-- 1. add subtag class into each li div -->
 
 <html>
-    <header>
+    <head>
         <meta charset="utf-8">
 
         <meta name="keywords" content="Stanley Kubrick, The Kubrick site Mirror, 2001: A Space Odyssey Program, the new alt.movies.kubrick FAQ">
@@ -14,7 +14,7 @@
 
         <script src="../script/script-2.js"></script>
 
-    </header>
+    </head>
 
     <body>
         <div class="wrapper">
@@ -24,6 +24,7 @@
 
             <!-- Title -->
                 <div class="title">
+                    <p class="back-button"><a href="../index.html"><span style="font-size:4em;">&#9732;</span> </a></p>
                     <h1>
                         The Kubrick Site
                     </h1>
@@ -38,7 +39,7 @@
                     <button class="tag-button">Scripts & Transcripts</button>
                     <button class="tag-button">Interviews & Depositions</button>
                     <button class="tag-button">Additional Resources</button>
-                    <button class="tag-button extra-bt">FAQ</button>
+                    <button class="tag-button extra-bt" onclick="location.href='faq.html'">FAQ</button>
                 </nav>
 
             <!-- Sub-tags -->
@@ -63,70 +64,125 @@
                     </article>
 
                 <!-- ESSAYS -->
-                    <nav class="tag-content essay-tag">
+                    <nav class="tag-content essay-tags">
                         <ul class="article-tags">
-                            <li class="subtag">Excerpt from Cinema 2: The Time Image by Gilles Deleuze </li>
-                            <li class="subtag">Excerpts from The Wolf at the Door: Stanley Kubrick, History, and the Holocaust by Geoffrey Cocks</li>
-                            <li class="subtag">The Country of the Mind in Kubrick's Fear and Desire by Jason Sperb</li>
-                            <li class="subtag">The Herd and Self-Reflexiveness by David Gerrard</li>
-                            <li class="subtag">On Viewing The Killing by Jules N. Binoculas</li>
-                            <li class="subtag">Three Essays on Spartacus by Duncan L. Cooper</li>
-                            <li class="subtag">Two Views of Lolita by Robert Stam and Thomas Allen Nelson</li>
-                            <li class="subtag">A Commentary on Dr. Strangelove by Brian Siano</li>
-                            <li class="subtag">Kubrick's Psychopaths by Gordon Banks</li>
-                            <li class="subtag">Just what the Doctor Ordered... by Jeremy Boxen</li>
-                            <li class="subtag">Dr. Strangelove by Sharon Ghamari-Tabrizi </li>
-                            <li class="subtag">Last Secrets of Strangelove Revealed Grant B. Stillman</li>
-                            <li class="subtag"> Kubrick and The Fantastic by Michel Ciment</li>
-                            <li class="subtag"> 2001 and the Motif of The Voyage by Claudia Zimny</li>
-                            <li>2001: Margaret Stackhouse's Reflections</li>
-                            <li>2001: A Progressive Analysis by Sandra Venturini</li>
-                            <li>2001: A Cold Descent by Mark Crispin Miller</li>
-                            <li>2001: A critical analysis of the film score by Dariusz Roberte </li>
-                            <li>2001 and the Philosophy of Nietzsche by Don MacGregor</li>
-                            <li>2001: Some Thoughts by Roderick Munday</li>
-                            <li>2001: Design & Meaning by Mark Martel</li>
-                            <li>Extracts from "Moonwatcher's Memoir" by Arthur C Clark & Dan Ricter</li>
-                            <li>2001: Compared to'2010' by John Morgan</li>
-                            <li>2001: The Case for Hal's Sanity by Clay Waldrop</li>
-                            <li>2001: Random Insights by Barry Krusch</li>
-                            <li>2001's "Hotel Sequence" by Derek Rose</li>
-                            <li>AI: "My Year with Stanley" by Sara Maitland </li>
-                            <li>The Clockwork Orange Controversy by Christian Bugge</li>
-                            <li>UK Clock ticks again for Kubrick's Orange by James Howard</li>
-                            <li>A Clockwork Naartjie: Censorship of Kubrick in SA by Craig Clarke</li>
-                            <li>The Cultural Productions of A Clockwork Orange by Janet Staiger</li>
-                            <li>The Aestheticization of Violence by Alexander Cohen</li>
-                            <li>Barry Lyndon Reconsidered by Mark Crispin Miller</li>
-                            <li>Kubrick's Anti Reading of "The Luck of Barry Lyndon" by Mark Crispin Miller</li>
-                            <li>Barry Lyndon: The Shape of Things to Come by Bilge Ebiri</li>
-                            <li>Narrative and Discourse in Barry Lyndon by Michael Klein</li>
-                            <li>Reappraising Kubrick's The Shining by Brian Siano</li>
-                            <li>On History, Simulation and Barry Lyndon by Jean Baudrillard </li>
-                            <li>Thoughts On Reading Kubrick's The Shining by Kian Bergstrom</li>
-                            <li>Historicism in The Shining by Frederic Jameson</li>
-                            <li>On The Helecopter Shadow inThe Shining by Jeff Blyth </li>
-                            <li>On The Helecopter Shadow inThe Shining by Greg MacGillivray </li>
-                            <li>A Review of Room 237 by Rod Munday</li>
-                            <li>Kubrick, King, and the Ultimate Scare Tactic by Michael Dare</li>
-                            <li>Full Metal Jacket as Genre Film by Brian Siano</li>
-                            <li> Full Metal Jacket by Bill Krohn</li>
-                            <li>Introducing Sociology by Tim Kreider</li>
-                            <li>Eyes Wide Shut and the Lacanian Real by Slavoj Zizek</li>
-                            <li>Animals in My Head': Kubrick's Preoccupation with Bathrooms by Jeff Westerman</li>
-                            <li>Stanley Kubrick: The New Humanist by Rupert Lister </li>
-                            <li>Stanley Kubrick: By Means of Music by Tony Palmer</li>
-
+                            <li class="subtag" id="essay-tag">Excerpt from Cinema 2: The Time Image by Gilles Deleuze </li>
+                            <li class="subtag" id="essay-tag">Excerpts from The Wolf at the Door: Stanley Kubrick, History, and the Holocaust by Geoffrey Cocks</li>
+                            <li class="subtag" id="essay-tag">The Country of the Mind in Kubrick's Fear and Desire by Jason Sperb</li>
+                            <li class="subtag" id="essay-tag">The Herd and Self-Reflexiveness by David Gerrard</li>
+                            <li class="subtag" id="essay-tag">On Viewing The Killing by Jules N. Binoculas</li>
+                            <li class="subtag" id="essay-tag">Three Essays on Spartacus by Duncan L. Cooper</li>
+                            <li class="subtag" id="essay-tag">Two Views of Lolita by Robert Stam and Thomas Allen Nelson</li>
+                            <li class="subtag" id="essay-tag">A Commentary on Dr. Strangelove by Brian Siano</li>
+                            <li class="subtag" id="essay-tag">Kubrick's Psychopaths by Gordon Banks</li>
+                            <li class="subtag" id="essay-tag">Just what the Doctor Ordered... by Jeremy Boxen</li>
+                            <li class="subtag" id="essay-tag">Dr. Strangelove by Sharon Ghamari-Tabrizi </li>
+                            <li class="subtag" id="essay-tag">Last Secrets of Strangelove Revealed Grant B. Stillman</li>
+                            <li class="subtag" id="essay-tag"> Kubrick and The Fantastic by Michel Ciment</li>
+                            <li class="subtag" id="essay-tag"> 2001 and the Motif of The Voyage by Claudia Zimny</li>
+                            <li class="subtag" id="essay-tag">2001: Margaret Stackhouse's Reflections</li>
+                            <li class="subtag" id="essay-tag">2001: A Progressive Analysis by Sandra Venturini</li>
+                            <li class="subtag" id="essay-tag">2001: A Cold Descent by Mark Crispin Miller</li>
+                            <li class="subtag" id="essay-tag">2001: A critical analysis of the film score by Dariusz Roberte </li>
+                            <li class="subtag" id="essay-tag">2001 and the Philosophy of Nietzsche by Don MacGregor</li>
+                            <li class="subtag" id="essay-tag">2001: Some Thoughts by Roderick Munday</li>
+                            <li class="subtag" id="essay-tag">2001: Design & Meaning by Mark Martel</li>
+                            <li class="subtag" id="essay-tag">Extracts from "Moonwatcher's Memoir" by Arthur C Clark & Dan Ricter</li>
+                            <li class="subtag" id="essay-tag">2001: Compared to'2010' by John Morgan</li>
+                            <li class="subtag" id="essay-tag">2001: The Case for Hal's Sanity by Clay Waldrop</li>
+                            <li class="subtag" id="essay-tag">2001: Random Insights by Barry Krusch</li>
+                            <li class="subtag" id="essay-tag">2001's "Hotel Sequence" by Derek Rose</li>
+                            <li class="subtag" id="essay-tag">AI: "My Year with Stanley" by Sara Maitland </li>
+                            <li class="subtag" id="essay-tag">The Clockwork Orange Controversy by Christian Bugge</li>
+                            <li class="subtag" id="essay-tag">UK Clock ticks again for Kubrick's Orange by James Howard</li>
+                            <li class="subtag" id="essay-tag">A Clockwork Naartjie: Censorship of Kubrick in SA by Craig Clarke</li>
+                            <li class="subtag" id="essay-tag">The Cultural Productions of A Clockwork Orange by Janet Staiger</li>
+                            <li class="subtag" id="essay-tag">The Aestheticization of Violence by Alexander Cohen</li>
+                            <li class="subtag" id="essay-tag">Barry Lyndon Reconsidered by Mark Crispin Miller</li>
+                            <li class="subtag" id="essay-tag">Kubrick's Anti Reading of "The Luck of Barry Lyndon" by Mark Crispin Miller</li>
+                            <li class="subtag" id="essay-tag">Barry Lyndon: The Shape of Things to Come by Bilge Ebiri</li>
+                            <li class="subtag" id="essay-tag">Narrative and Discourse in Barry Lyndon by Michael Klein</li>
+                            <li class="subtag" id="essay-tag">Reappraising Kubrick's The Shining by Brian Siano</li>
+                            <li class="subtag" id="essay-tag">On History, Simulation and Barry Lyndon by Jean Baudrillard </li>
+                            <li class="subtag" id="essay-tag">Thoughts On Reading Kubrick's The Shining by Kian Bergstrom</li>
+                            <li class="subtag" id="essay-tag">Historicism in The Shining by Frederic Jameson</li>
+                            <li class="subtag" id="essay-tag">On The Helecopter Shadow inThe Shining by Jeff Blyth </li>
+                            <li class="subtag" id="essay-tag">On The Helecopter Shadow inThe Shining by Greg MacGillivray </li>
+                            <li class="subtag" id="essay-tag">A Review of Room 237 by Rod Munday</li>
+                            <li class="subtag" id="essay-tag">Kubrick, King, and the Ultimate Scare Tactic by Michael Dare</li>
+                            <li class="subtag" id="essay-tag">Full Metal Jacket as Genre Film by Brian Siano</li>
+                            <li class="subtag" id="essay-tag"> Full Metal Jacket by Bill Krohn</li>
+                            <li class="subtag" id="essay-tag">Introducing Sociology by Tim Kreider</li>
+                            <li class="subtag" id="essay-tag">Eyes Wide Shut and the Lacanian Real by Slavoj Zizek</li>
+                            <li class="subtag" id="essay-tag">Animals in My Head': Kubrick's Preoccupation with Bathrooms by Jeff Westerman</li>
+                            <li class="subtag" id="essay-tag">Stanley Kubrick: The New Humanist by Rupert Lister </li>
+                            <li class="subtag" id="essay-tag">Stanley Kubrick: By Means of Music by Tony Palmer</li>
                         </ul>
+                        <div height="10em"></div>
+
                     </nav>
 
                 <!-- DEBATE -->
-                    <nav class="tag" id="debate">
+                    <nav class="tag" id="debate-tags">
+                        <ul class="articles-tags">
+                            <li class="subtag" id="debate-tag">Regarding Full Metal Jacket, a Newsgroup Discussion</li>
+                            <li class="subtag" id="debate-tag">Ryan O'Neal as Barry Lyndon, a Newsgroup Discussion</li>
+                            <li class="subtag" id="debate-tag">The 'Youth Culture' of 2001, a Newsgroup Discussion</li>
+                            <li class="subtag" id="debate-tag">Stanley Kubrick and Modernism a Newsgroup Discussion</li>
+                            <li class="subtag" id="debate-tag">The Jungian Thing: Duality in Full Metal Jacket, a Newsgroup Discussion</li>
+                            <li class="subtag" id="debate-tag">Kubrick and the Individual by Barry Krusch & Harry Mehlman</li>
+                            <li class="subtag" id="debate-tag">Dr. Strangelove's 'Erection' by Alec Kerala-Lee & J. Kastorf</li>
+                            <li class="subtag" id="debate-tag">Barry Lyndon: Passion's Epitaph by Geoffrey Alexander & Bilge Ebiri</li>
+                            <li class="subtag" id="debate-tag">The Shining and Transcendence by Tim Fulmer & Rod Munday</li>
+
+                        </ul>
+                        <div height="10em"></div>
+
                     </nav>
 
-                    <nav class="tag" id="reviews"></nav>
-                    <nav class="tag" id="script"></nav>
-                    <nav class="tag" id="interviews"></nav>
+                    <nav class="tag" id="reviews">
+                        <ul class="articles-tags">
+
+                            <li class="subtag" id="reviews-tag"> Brian Siano reviews LoBrutto's "Kubrick: A Biography"</li>
+                            <li class="subtag" id="reviews-tag"> "Psychedelic Fascism" / The Hechinger Debacle </li>
+                            <li class="subtag" id="reviews-tag"> The Harvard Crimson Review of 2001 (1968)</li>
+                            <li class="subtag" id="reviews-tag"> After Man by Penelope Gilliatt</li>
+                            <li class="subtag" id="reviews-tag"> Three Reviews of 2001 by Joseph Gelmis</li>
+                            <li class="subtag" id="reviews-tag"> Three Perspectives on 2001 by Morris Beja et al.</li>
+                            <li class="subtag" id="reviews-tag"> Apeman, Superman by Leon Stover</li>
+                            <li class="subtag" id="reviews-tag"> A Review of 2001 by Ed Emshwiller</li>
+                            <li class="subtag" id="reviews-tag"> A Review of 2001 by Samuel R. Delany</li>
+                            <li class="subtag" id="reviews-tag"> A Review of 2001 by Lester Del Rey</li>
+                            <li class="subtag" id="reviews-tag"> The Chicago Sun-Times 1968 Review of 2001by Roger Ebert</li>
+                            <li class="subtag" id="reviews-tag"> NPR covers a showing of Fear and Desire in New York</li>
+                            <li class="subtag" id="reviews-tag"> From 'The Daily Telegraph' (London) by Quentin Curtis</li>
+                            <li class="subtag" id="reviews-tag"> An article on Standly Kubrick from the Radio Times' (UK) June 1996 by Barry Norman</li>
+                            <li class="subtag" id="reviews-tag"> A review of The Shining(Excerpts) by Pauline Kael </li>
+                            <li class="subtag" id="reviews-tag"> A review of A Clockwork Orange by Pauline Kael</li>
+                            <li class="subtag" id="reviews-tag">  An interpretation of the theme of Native American Genocide in The Shining by Bill Blakemore</li>
+                            <li class="subtag" id="reviews-tag">  'Stanley Kubrick's Horror Show' an article on The Shining by Jack Kroll </li>
+
+
+
+                        </ul>
+                        <div height="5em"></div>
+
+                    </nav>
+                    <nav class="tag" id="script">
+                        <ul class="articles-tags">
+                            <li class="subtag" id="script-tag">  Dr. Strangelove... / Continuity Script</li>
+                            <li class="subtag" id="script-tag"> 2001: A Space Odyssey / Original Screenplay (1965)</li>
+                            <li class="subtag" id="script-tag">  The Souvenir Program from the Cinerama Release of 2001</li>
+                        </ul>
+                    </nav>
+                    <nav class="tag" id="interviews">
+                        <ul class="articles-tags">
+                            <li class="subtag" id="interview-tag">  Dr. Strangelove... / Continuity Script</li>
+                            <li class="subtag" id="interview-tag"> 2001: A Space Odyssey / Original Screenplay (1965)</li>
+                            <li class="subtag" id="interview-tag">  The Souvenir Program from the Cinerama Release of 2001</li>
+                        
+                        </ul>
+                    </nav>
                     <nav class="tag" id="resources"></nav>
                     <nav class="tag" id="faq-tag"></nav>
                 </div>
