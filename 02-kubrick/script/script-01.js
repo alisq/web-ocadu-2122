@@ -1,5 +1,5 @@
-// BUTTON CLICK EVENT
 var width;
+  
 
 $("document").ready(function(){
     width = $(window).width();
@@ -7,6 +7,7 @@ $("document").ready(function(){
     return
 })
 
+// BUTTON CLICK EVENT
 
 $(".tag-button").click(function(){    
 
@@ -28,6 +29,22 @@ $(".tag-button").click(function(){
     return
 })
 
+
+$(".article-tags .subtag").click(function(){
+    let tagId = $(this).attr("id");
+    console.log(tagId);
+
+    $(".article-container #"+tagId).css("display","block");
+    $(".article-container div:not(#"+tagId+")").css("display","none");
+
+    $(this).css({
+        "background":"black",
+        "color":"white",
+    });
+})
+
+// SPLIT SCREEN 
+
 $(".subtag").click(function(){
     $(".right-content").css("display","block");
     $("#handle").css("display","block");
@@ -44,22 +61,6 @@ $(".subtag").click(function(){
     })
 
 })
-
-
-$(".article-tags .subtag").click(function(){
-    let tagId = $(this).attr("id");
-    console.log(tagId);
-
-    $(".article-container #"+tagId).css("display","block");
-    $(".article-container div:not(#"+tagId+")").css("display","none");
-
-    $(this).css({
-        "background":"black",
-        "color":"white",
-    });
-})
-
-
 
 
 
