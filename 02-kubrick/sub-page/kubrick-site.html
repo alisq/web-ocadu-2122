@@ -9,191 +9,192 @@
         <meta name="description" content=" This page links to three separate sites exploring the work of American filmmaker Stanley Kubrick (1928 - 1999). The Kubrick Site, is the alt.movies.kubrick archive, run by Geoffrey Alexander.  The 2001: A Space Odyssey Program, showcases the original 1960's foyer program and the New alt.movies.kubrick FAQ, attempts to answer some of the questions asked on alt.movies.kubrick.">
 
         <title>The Kubrick Site</title>
-
+        <link rel="stylesheet" href="//code.jquery.com/ui/1.13.0/themes/base/jquery-ui.css">
         <link rel="stylesheet" type="text/css" href="../stylesheet/stylesheet-2.css">
 
 
     </head>
 
     <body>
-        <div class="wrapper">
+        <div class="wrapper split">
         
         <!-- Left-->
             <section class="left-index">
+                <div class ="left-container">
+                <!-- Title -->
+                    <div class="title">
+                        <p class="back-button"><a href="../index.html"><span style="font-size:4em;">&#9732;</span> </a></p>
+                        <h1>
+                            The Kubrick Site
+                        </h1>
+                    </div>    
 
-            <!-- Title -->
-                <div class="title">
-                    <p class="back-button"><a href="../index.html"><span style="font-size:4em;">&#9732;</span> </a></p>
-                    <h1>
-                        The Kubrick Site
-                    </h1>
-                </div>    
+                <!-- Tags -->
+                    <nav class="navigation-tags">
+                        <button class="tag-button" id="about">About</button>
+                        <button class="tag-button" id="essay-tags">Essays & Articles</button>
+                        <button class="tag-button" id="debate-tags">Debate & Discusions</button>
+                        <button class="tag-button" id="reviews-tags">Reviews & Press Materials</button>
+                        <button class="tag-button" id="script-tags">Scripts & Transcripts</button>
+                        <button class="tag-button" id="interview-tags">Interviews & Depositions</button>
+                        <button class="tag-button" id="resources-tags">Additional Resources</button>
+                        <button class="tag-button extra-bt" onclick="location.href='faq.html'">FAQ</button>
+                    </nav>
 
-            <!-- Tags -->
-                <nav class="navigation-tags">
-                    <button class="tag-button">About</button>
-                    <button class="tag-button">Essays & Articles</button>
-                    <button class="tag-button">Debate & Discusions</button>
-                    <button class="tag-button">Reviews & Press Materials</button>
-                    <button class="tag-button">Scripts & Transcripts</button>
-                    <button class="tag-button">Interviews & Depositions</button>
-                    <button class="tag-button">Additional Resources</button>
-                    <button class="tag-button extra-bt" onclick="location.href='faq.html'">FAQ</button>
-                </nav>
+                <!-- Sub-tags -->
+                    <div class="tags-container">
+                    
+                    <!-- ABOUT -->
+                        <nav class="tag-content" id="about">
+                            <p>The Kubrick Site has been established as a non-profit resource archive for documentary materials regarding, in whole or in part, the work of the late American film director and producer Stanley Kubrick (1928-1999). We'd like to thank the literally thousands of readers and participants whose contributions appear in these pages.
 
-            <!-- Sub-tags -->
-                <div class="tags-container">
-                
-                <!-- ABOUT -->
-                    <article class="tag-content about-tag" id="about">
-                        <p>The Kubrick Site has been established as a non-profit resource archive for documentary materials regarding, in whole or in part, the work of the late American film director and producer Stanley Kubrick (1928-1999). We'd like to thank the literally thousands of readers and participants whose contributions appear in these pages.
-
-                        </p>
-                        <br>
-                            <blockquote>“Sometimes the truth of the thing is not so much in the think of it, but in the feel of it.”     
-                            </blockquote>
-                        <p>The materials archived, stored, and presented here, are copyrighted by their respective contributors, and may not be saved, re-transmitted, republished, or reformatted by any means, electronic or mechanical. This site offers broad public access to these materials exclusively as a contribution to education and scholarship, and for the private, non-profit use of the academic community. The materials in this collection are protected by the U.S. Copyright Law (Title 17, U.S. Code) and/or by the copyright or neighboring-rights laws of other nations. More information regarding U.S. Copyright Law is provided by the U.S. Copyright Office at the Library of Congress. Additionally, the reproduction of most of these materials is restricted by terms of reprint & distribution agreements, authors' restrictions, privacy and publicity rights, and such licensing and/or trademarks agreements as may obtain. This restriction includes the use of these images in other publications, both print and electronic, including rebroadcast on the World Wide Web, as well as their archiving for public availability in Internet-accessible FTP or HTTP directories. 
+                            </p>
                             <br>
-                            <br>  The views and opinions of the respective contributors are their own, and may not necessarily represent the views of other contributors, the views of Time Warner Corporation or Turner Broadcasting (including but not limited to it's staff and employees), nor the personal viewpoint of this archive's editor. Being an educational resource, this archive site offers, and is interested only in, textual or other documentary materials relating to Kubrick's films, which are offered free of charge, and for which the copyrights are secured and may be licensed and/or reassigned. We do not purchase such materials, nor memorabilia, nor copies of the films themselves in any format, nor does this site offer to trade or to assist others in trading such materials; inquiries regarding such may be directed to the newsgroup itself. 
-                            <br>
-                            <br> There are two additional sites which will be of interest; they are Warner Bros. official website for the films of Stanley Kubrick www.kubrickfilms.com and the Kubrick Multimedia Archive. The latter was the inspiration for the present textual site. Those wishing to view graphics, sounds, and other such media should go there. 
-                            <br>
-                            <br> The Kubrick Site is a privately maintained project, it has no affiliation with Hobby Films Ltd., Warner Bros. Studios, Turner Broadcasting, or Time Warner Communications Corporation (including their subsidiaries or their licensees) should be inferred. 
-                        </p>
-                    </article>
+                                <blockquote class="wisdom">“Sometimes the truth of the thing is not so much in the think of it, but in the feel of it.”     
+                                </blockquote>
+                            <p>The materials archived, stored, and presented here, are copyrighted by their respective contributors, and may not be saved, re-transmitted, republished, or reformatted by any means, electronic or mechanical. This site offers broad public access to these materials exclusively as a contribution to education and scholarship, and for the private, non-profit use of the academic community. The materials in this collection are protected by the U.S. Copyright Law (Title 17, U.S. Code) and/or by the copyright or neighboring-rights laws of other nations. More information regarding U.S. Copyright Law is provided by the U.S. Copyright Office at the Library of Congress. Additionally, the reproduction of most of these materials is restricted by terms of reprint & distribution agreements, authors' restrictions, privacy and publicity rights, and such licensing and/or trademarks agreements as may obtain. This restriction includes the use of these images in other publications, both print and electronic, including rebroadcast on the World Wide Web, as well as their archiving for public availability in Internet-accessible FTP or HTTP directories. 
+                                <br>
+                                <br>  The views and opinions of the respective contributors are their own, and may not necessarily represent the views of other contributors, the views of Time Warner Corporation or Turner Broadcasting (including but not limited to it's staff and employees), nor the personal viewpoint of this archive's editor. Being an educational resource, this archive site offers, and is interested only in, textual or other documentary materials relating to Kubrick's films, which are offered free of charge, and for which the copyrights are secured and may be licensed and/or reassigned. We do not purchase such materials, nor memorabilia, nor copies of the films themselves in any format, nor does this site offer to trade or to assist others in trading such materials; inquiries regarding such may be directed to the newsgroup itself. 
+                                <br>
+                                <br> There are two additional sites which will be of interest; they are Warner Bros. official website for the films of Stanley Kubrick www.kubrickfilms.com and the Kubrick Multimedia Archive. The latter was the inspiration for the present textual site. Those wishing to view graphics, sounds, and other such media should go there. 
+                                <br>
+                                <br> The Kubrick Site is a privately maintained project, it has no affiliation with Hobby Films Ltd., Warner Bros. Studios, Turner Broadcasting, or Time Warner Communications Corporation (including their subsidiaries or their licensees) should be inferred. 
+                            </p>
+                        </nav>
 
-                <!-- ESSAYS -->
-                    <nav class="tag-content essay-tags">
-                        <ul class="article-tags">
-                            <li class="subtag" id="essay-tag">Excerpt from Cinema 2: The Time Image by Gilles Deleuze </li>
-                            <li class="subtag" id="essay-tag">Excerpts from The Wolf at the Door: Stanley Kubrick, History, and the Holocaust by Geoffrey Cocks</li>
-                            <li class="subtag" id="essay-tag">The Country of the Mind in Kubrick's Fear and Desire by Jason Sperb</li>
-                            <li class="subtag" id="essay-tag">The Herd and Self-Reflexiveness by David Gerrard</li>
-                            <li class="subtag" id="essay-tag">On Viewing The Killing by Jules N. Binoculas</li>
-                            <li class="subtag" id="essay-tag">Three Essays on Spartacus by Duncan L. Cooper</li>
-                            <li class="subtag" id="essay-tag">Two Views of Lolita by Robert Stam and Thomas Allen Nelson</li>
-                            <li class="subtag" id="essay-tag">A Commentary on Dr. Strangelove by Brian Siano</li>
-                            <li class="subtag" id="essay-tag">Kubrick's Psychopaths by Gordon Banks</li>
-                            <li class="subtag" id="essay-tag">Just what the Doctor Ordered... by Jeremy Boxen</li>
-                            <li class="subtag" id="essay-tag">Dr. Strangelove by Sharon Ghamari-Tabrizi </li>
-                            <li class="subtag" id="essay-tag">Last Secrets of Strangelove Revealed Grant B. Stillman</li>
-                            <li class="subtag" id="essay-tag"> Kubrick and The Fantastic by Michel Ciment</li>
-                            <li class="subtag" id="essay-tag"> 2001 and the Motif of The Voyage by Claudia Zimny</li>
-                            <li class="subtag" id="essay-tag">2001: Margaret Stackhouse's Reflections</li>
-                            <li class="subtag" id="essay-tag">2001: A Progressive Analysis by Sandra Venturini</li>
-                            <li class="subtag" id="essay-tag">2001: A Cold Descent by Mark Crispin Miller</li>
-                            <li class="subtag" id="essay-tag">2001: A critical analysis of the film score by Dariusz Roberte </li>
-                            <li class="subtag" id="essay-tag">2001 and the Philosophy of Nietzsche by Don MacGregor</li>
-                            <li class="subtag" id="essay-tag">2001: Some Thoughts by Roderick Munday</li>
-                            <li class="subtag" id="essay-tag">2001: Design & Meaning by Mark Martel</li>
-                            <li class="subtag" id="essay-tag">Extracts from "Moonwatcher's Memoir" by Arthur C Clark & Dan Ricter</li>
-                            <li class="subtag" id="essay-tag">2001: Compared to'2010' by John Morgan</li>
-                            <li class="subtag" id="essay-tag">2001: The Case for Hal's Sanity by Clay Waldrop</li>
-                            <li class="subtag" id="essay-tag">2001: Random Insights by Barry Krusch</li>
-                            <li class="subtag" id="essay-tag">2001's "Hotel Sequence" by Derek Rose</li>
-                            <li class="subtag" id="essay-tag">AI: "My Year with Stanley" by Sara Maitland </li>
-                            <li class="subtag" id="essay-tag">The Clockwork Orange Controversy by Christian Bugge</li>
-                            <li class="subtag" id="essay-tag">UK Clock ticks again for Kubrick's Orange by James Howard</li>
-                            <li class="subtag" id="essay-tag">A Clockwork Naartjie: Censorship of Kubrick in SA by Craig Clarke</li>
-                            <li class="subtag" id="essay-tag">The Cultural Productions of A Clockwork Orange by Janet Staiger</li>
-                            <li class="subtag" id="essay-tag">The Aestheticization of Violence by Alexander Cohen</li>
-                            <li class="subtag" id="essay-tag">Barry Lyndon Reconsidered by Mark Crispin Miller</li>
-                            <li class="subtag" id="essay-tag">Kubrick's Anti Reading of "The Luck of Barry Lyndon" by Mark Crispin Miller</li>
-                            <li class="subtag" id="essay-tag">Barry Lyndon: The Shape of Things to Come by Bilge Ebiri</li>
-                            <li class="subtag" id="essay-tag">Narrative and Discourse in Barry Lyndon by Michael Klein</li>
-                            <li class="subtag" id="essay-tag">Reappraising Kubrick's The Shining by Brian Siano</li>
-                            <li class="subtag" id="essay-tag">On History, Simulation and Barry Lyndon by Jean Baudrillard </li>
-                            <li class="subtag" id="essay-tag">Thoughts On Reading Kubrick's The Shining by Kian Bergstrom</li>
-                            <li class="subtag" id="essay-tag">Historicism in The Shining by Frederic Jameson</li>
-                            <li class="subtag" id="essay-tag">On The Helecopter Shadow inThe Shining by Jeff Blyth </li>
-                            <li class="subtag" id="essay-tag">On The Helecopter Shadow inThe Shining by Greg MacGillivray </li>
-                            <li class="subtag" id="essay-tag">A Review of Room 237 by Rod Munday</li>
-                            <li class="subtag" id="essay-tag">Kubrick, King, and the Ultimate Scare Tactic by Michael Dare</li>
-                            <li class="subtag" id="essay-tag">Full Metal Jacket as Genre Film by Brian Siano</li>
-                            <li class="subtag" id="essay-tag"> Full Metal Jacket by Bill Krohn</li>
-                            <li class="subtag" id="essay-tag">Introducing Sociology by Tim Kreider</li>
-                            <li class="subtag" id="essay-tag">Eyes Wide Shut and the Lacanian Real by Slavoj Zizek</li>
-                            <li class="subtag" id="essay-tag">Animals in My Head': Kubrick's Preoccupation with Bathrooms by Jeff Westerman</li>
-                            <li class="subtag" id="essay-tag">Stanley Kubrick: The New Humanist by Rupert Lister </li>
-                            <li class="subtag" id="essay-tag">Stanley Kubrick: By Means of Music by Tony Palmer</li>
-                        </ul>
-                        <div height="10em"></div>
+                    <!-- ESSAYS -->
+                        <nav class="tag-content" id="essay-tags">
+                            <ul class="article-tags">
+                                <li class="subtag essay-tag" id="text-1">Excerpt from Cinema 2: The Time Image by Gilles Deleuze </li>
+                                <li class="subtag essay-tag" id="text-2">Excerpts from The Wolf at the Door: Stanley Kubrick, History, and the Holocaust by Geoffrey Cocks</li>
+                                <li class="subtag essay-tag" id="text-3">The Country of the Mind in Kubrick's Fear and Desire by Jason Sperb</li>
+                                <li class="subtag essay-tag" id="text-4">The Herd and Self-Reflexiveness by David Gerrard</li>
+                                <li class="subtag essay-tag" id="text-5">On Viewing The Killing by Jules N. Binoculas</li>
+                                <li class="subtag essay-tag" id="text-6">Three Essays on Spartacus by Duncan L. Cooper</li>
+                                <li class="subtag essay-tag" id="text-7">Two Views of Lolita by Robert Stam and Thomas Allen Nelson</li>
+                                <li class="subtag essay-tag" id="text-8">A Commentary on Dr. Strangelove by Brian Siano</li>
+                                <li class="subtag essay-tag" id="text-9">Kubrick's Psychopaths by Gordon Banks</li>
+                                <li class="subtag essay-tag" id="text-10">Just what the Doctor Ordered... by Jeremy Boxen</li>
+                                <li class="subtag essay-tag" id="text-11">Dr. Strangelove by Sharon Ghamari-Tabrizi </li>
+                                <li class="subtag essay-tag" id="text-12">Last Secrets of Strangelove Revealed Grant B. Stillman</li>
+                                <li class="subtag essay-tag" id="text-13"> Kubrick and The Fantastic by Michel Ciment</li>
+                                <li class="subtag essay-tag" id="text-14"> 2001 and the Motif of The Voyage by Claudia Zimny</li>
+                                <li class="subtag essay-tag" id="text-15">2001: Margaret Stackhouse's Reflections</li>
+                                <li class="subtag essay-tag" id="text-16">2001: A Progressive Analysis by Sandra Venturini</li>
+                                <li class="subtag essay-tag" id="text-17">2001: A Cold Descent by Mark Crispin Miller</li>
+                                <li class="subtag essay-tag" id="text-18">2001: A critical analysis of the film score by Dariusz Roberte </li>
+                                <li class="subtag essay-tag" id="text-19">2001 and the Philosophy of Nietzsche by Don MacGregor</li>
+                                <li class="subtag essay-tag" id="text-20">2001: Some Thoughts by Roderick Munday</li>
+                                <li class="subtag essay-tag" id="text-21">2001: Design & Meaning by Mark Martel</li>
+                                <li class="subtag essay-tag" id="text-22">Extracts from "Moonwatcher's Memoir" by Arthur C Clark & Dan Ricter</li>
+                                <li class="subtag essay-tag" id="text-23">2001: Compared to'2010' by John Morgan</li>
+                                <li class="subtag essay-tag" id="text-24">2001: The Case for Hal's Sanity by Clay Waldrop</li>
+                                <li class="subtag essay-tag" id="text-25">2001: Random Insights by Barry Krusch</li>
+                                <li class="subtag essay-tag" id="text-26">2001's "Hotel Sequence" by Derek Rose</li>
+                                <li class="subtag essay-tag" id="text-27">AI: "My Year with Stanley" by Sara Maitland </li>
+                                <li class="subtag essay-tag" id="text-28">The Clockwork Orange Controversy by Christian Bugge</li>
+                                <li class="subtag essay-tag" id="text-29">UK Clock ticks again for Kubrick's Orange by James Howard</li>
+                                <li class="subtag essay-tag" id="text-30">A Clockwork Naartjie: Censorship of Kubrick in SA by Craig Clarke</li>
+                                <li class="subtag essay-tag" id="text-31">The Cultural Productions of A Clockwork Orange by Janet Staiger</li>
+                                <li class="subtag essay-tag" id="text-32">The Aestheticization of Violence by Alexander Cohen</li>
+                                <li class="subtag essay-tag" id="text-33">Barry Lyndon Reconsidered by Mark Crispin Miller</li>
+                                <li class="subtag essay-tag" id="text-34">Kubrick's Anti Reading of "The Luck of Barry Lyndon" by Mark Crispin Miller</li>
+                                <li class="subtag essay-tag" id="text-35">Barry Lyndon: The Shape of Things to Come by Bilge Ebiri</li>
+                                <li class="subtag essay-tag" id="text-36">Narrative and Discourse in Barry Lyndon by Michael Klein</li>
+                                <li class="subtag essay-tag" id="text-37">Reappraising Kubrick's The Shining by Brian Siano</li>
+                                <li class="subtag essay-tag" id="text-38">On History, Simulation and Barry Lyndon by Jean Baudrillard </li>
+                                <li class="subtag essay-tag" id="text-39">Thoughts On Reading Kubrick's The Shining by Kian Bergstrom</li>
+                                <li class="subtag essay-tag" id="text-40">Historicism in The Shining by Frederic Jameson</li>
+                                <li class="subtag essay-tag" id="text-41">On The Helecopter Shadow inThe Shining by Jeff Blyth </li>
+                                <li class="subtag essay-tag" id="text-43">On The Helecopter Shadow inThe Shining by Greg MacGillivray </li>
+                                <li class="subtag essay-tag" id="text-44">A Review of Room 237 by Rod Munday</li>
+                                <li class="subtag essay-tag" id="text-45">Kubrick, King, and the Ultimate Scare Tactic by Michael Dare</li>
+                                <li class="subtag essay-tag" id="text-46">Full Metal Jacket as Genre Film by Brian Siano</li>
+                                <li class="subtag essay-tag" id="text-47"> Full Metal Jacket by Bill Krohn</li>
+                                <li class="subtag essay-tag" id="text-48">Introducing Sociology by Tim Kreider</li>
+                                <li class="subtag essay-tag" id="text-49">Eyes Wide Shut and the Lacanian Real by Slavoj Zizek</li>
+                                <li class="subtag essay-tag" id="text-50">Animals in My Head': Kubrick's Preoccupation with Bathrooms by Jeff Westerman</li>
+                                <li class="subtag essay-tag" id="text-51">Stanley Kubrick: The New Humanist by Rupert Lister </li>
+                                <li class="subtag essay-tag" id="text-52">Stanley Kubrick: By Means of Music by Tony Palmer</li>
+                            </ul>
+                            <div height="10em"></div>
 
-                    </nav>
+                        </nav>
 
-                <!-- DEBATE -->
-                    <nav class="tag" id="debate-tags">
-                        <ul class="articles-tags">
-                            <li class="subtag" id="debate-tag">Regarding Full Metal Jacket, a Newsgroup Discussion</li>
-                            <li class="subtag" id="debate-tag">Ryan O'Neal as Barry Lyndon, a Newsgroup Discussion</li>
-                            <li class="subtag" id="debate-tag">The 'Youth Culture' of 2001, a Newsgroup Discussion</li>
-                            <li class="subtag" id="debate-tag">Stanley Kubrick and Modernism a Newsgroup Discussion</li>
-                            <li class="subtag" id="debate-tag">The Jungian Thing: Duality in Full Metal Jacket, a Newsgroup Discussion</li>
-                            <li class="subtag" id="debate-tag">Kubrick and the Individual by Barry Krusch & Harry Mehlman</li>
-                            <li class="subtag" id="debate-tag">Dr. Strangelove's 'Erection' by Alec Kerala-Lee & J. Kastorf</li>
-                            <li class="subtag" id="debate-tag">Barry Lyndon: Passion's Epitaph by Geoffrey Alexander & Bilge Ebiri</li>
-                            <li class="subtag" id="debate-tag">The Shining and Transcendence by Tim Fulmer & Rod Munday</li>
+                    <!-- DEBATE -->
+                        <nav class="tag-content" id="debate-tags">
+                            <ul class="article-tags">
+                                <li class="subtag debate-tag" id="text-53">Regarding Full Metal Jacket, a Newsgroup Discussion</li>
+                                <li class="subtag debate-tag" id="text-54">Ryan O'Neal as Barry Lyndon, a Newsgroup Discussion</li>
+                                <li class="subtag debate-tag" id="text-55">The 'Youth Culture' of 2001, a Newsgroup Discussion</li>
+                                <li class="subtag debate-tag" id="text-56">Stanley Kubrick and Modernism a Newsgroup Discussion</li>
+                                <li class="subtag debate-tag" id="text-57">The Jungian Thing: Duality in Full Metal Jacket, a Newsgroup Discussion</li>
+                                <li class="subtag debate-tag" id="text-58">Kubrick and the Individual by Barry Krusch & Harry Mehlman</li>
+                                <li class="subtag debate-tag" id="text-59">Dr. Strangelove's 'Erection' by Alec Kerala-Lee & J. Kastorf</li>
+                                <li class="subtag debate-tag" id="text-60">Barry Lyndon: Passion's Epitaph by Geoffrey Alexander & Bilge Ebiri</li>
+                                <li class="subtag debate-tag" id="text-61">The Shining and Transcendence by Tim Fulmer & Rod Munday</li>
 
-                        </ul>
-                        <div height="10em"></div>
+                            </ul>
+                            <div height="10em"></div>
 
-                    </nav>
+                        </nav>
 
-                    <nav class="tag" id="reviews">
-                        <ul class="articles-tags">
+                        <nav class="tag-content" id="reviews-tags">
+                            <ul class="article-tags">
 
-                            <li class="subtag" id="reviews-tag"> Brian Siano reviews LoBrutto's "Kubrick: A Biography"</li>
-                            <li class="subtag" id="reviews-tag"> "Psychedelic Fascism" / The Hechinger Debacle </li>
-                            <li class="subtag" id="reviews-tag"> The Harvard Crimson Review of 2001 (1968)</li>
-                            <li class="subtag" id="reviews-tag"> After Man by Penelope Gilliatt</li>
-                            <li class="subtag" id="reviews-tag"> Three Reviews of 2001 by Joseph Gelmis</li>
-                            <li class="subtag" id="reviews-tag"> Three Perspectives on 2001 by Morris Beja et al.</li>
-                            <li class="subtag" id="reviews-tag"> Apeman, Superman by Leon Stover</li>
-                            <li class="subtag" id="reviews-tag"> A Review of 2001 by Ed Emshwiller</li>
-                            <li class="subtag" id="reviews-tag"> A Review of 2001 by Samuel R. Delany</li>
-                            <li class="subtag" id="reviews-tag"> A Review of 2001 by Lester Del Rey</li>
-                            <li class="subtag" id="reviews-tag"> The Chicago Sun-Times 1968 Review of 2001by Roger Ebert</li>
-                            <li class="subtag" id="reviews-tag"> NPR covers a showing of Fear and Desire in New York</li>
-                            <li class="subtag" id="reviews-tag"> From 'The Daily Telegraph' (London) by Quentin Curtis</li>
-                            <li class="subtag" id="reviews-tag"> An article on Standly Kubrick from the Radio Times' (UK) June 1996 by Barry Norman</li>
-                            <li class="subtag" id="reviews-tag"> A review of The Shining(Excerpts) by Pauline Kael </li>
-                            <li class="subtag" id="reviews-tag"> A review of A Clockwork Orange by Pauline Kael</li>
-                            <li class="subtag" id="reviews-tag">  An interpretation of the theme of Native American Genocide in The Shining by Bill Blakemore</li>
-                            <li class="subtag" id="reviews-tag">  'Stanley Kubrick's Horror Show' an article on The Shining by Jack Kroll </li>
+                                <li class="subtag reviews-tag" id="text-61"> Brian Siano reviews LoBrutto's "Kubrick: A Biography"</li>
+                                <li class="subtag reviews-tag" id="text-62"> "Psychedelic Fascism" / The Hechinger Debacle </li>
+                                <li class="subtag reviews-tag" id="text-63"> The Harvard Crimson Review of 2001 (1968)</li>
+                                <li class="subtag reviews-tag" id="text-64"> After Man by Penelope Gilliatt</li>
+                                <li class="subtag reviews-tag" id="text-65"> Three Reviews of 2001 by Joseph Gelmis</li>
+                                <li class="subtag reviews-tag" id="text-66"> Three Perspectives on 2001 by Morris Beja et al.</li>
+                                <li class="subtag reviews-tag" id="text-67"> Apeman, Superman by Leon Stover</li>
+                                <li class="subtag reviews-tag" id="text-68"> A Review of 2001 by Ed Emshwiller</li>
+                                <li class="subtag reviews-tag" id="text-69"> A Review of 2001 by Samuel R. Delany</li>
+                                <li class="subtag reviews-tag" id="text-70"> A Review of 2001 by Lester Del Rey</li>
+                                <li class="subtag reviews-tag" id="text-71"> The Chicago Sun-Times 1968 Review of 2001by Roger Ebert</li>
+                                <li class="subtag reviews-tag" id="text-72"> NPR covers a showing of Fear and Desire in New York</li>
+                                <li class="subtag reviews-tag" id="text-73"> From 'The Daily Telegraph' (London) by Quentin Curtis</li>
+                                <li class="subtag reviews-tag" id="text-74"> An article on Standly Kubrick from the Radio Times' (UK) June 1996 by Barry Norman</li>
+                                <li class="subtag reviews-tag" id="text-75"> A review of The Shining(Excerpts) by Pauline Kael </li>
+                                <li class="subtag reviews-tag" id="text-76"> A review of A Clockwork Orange by Pauline Kael</li>
+                                <li class="subtag reviews-tag" id="text-77">  An interpretation of the theme of Native American Genocide in The Shining by Bill Blakemore</li>
+                                <li class="subtag reviews-tag" id="text-78">  'Stanley Kubrick's Horror Show' an article on The Shining by Jack Kroll </li>
 
 
 
-                        </ul>
-                        <div height="5em"></div>
+                            </ul>
+                            <div height="5em"></div>
 
-                    </nav>
-                    <nav class="tag" id="script">
-                        <ul class="articles-tags">
-                            <li class="subtag" id="script-tag">  Dr. Strangelove... / Continuity Script</li>
-                            <li class="subtag" id="script-tag"> 2001: A Space Odyssey / Original Screenplay (1965)</li>
-                            <li class="subtag" id="script-tag">  The Souvenir Program from the Cinerama Release of 2001</li>
-                        </ul>
-                    </nav>
-                    <nav class="tag" id="interviews">
-                        <ul class="articles-tags">
-                            <li class="subtag" id="interview-tag">  Dr. Strangelove... / Continuity Script</li>
-                            <li class="subtag" id="interview-tag"> 2001: A Space Odyssey / Original Screenplay (1965)</li>
-                            <li class="subtag" id="interview-tag">  The Souvenir Program from the Cinerama Release of 2001</li>
-                        
-                        </ul>
-                    </nav>
-                    <nav class="tag" id="resources"></nav>
-                    <nav class="tag" id="faq-tag"></nav>
+                        </nav>
+                        <nav class="tag-content" id="script-tags">
+                            <ul class="article-tags">
+                                <li class="subtag script-tag" id="text-78">  Dr. Strangelove... / Continuity Script</li>
+                                <li class="subtag script-tag" id="text-79"> 2001: A Space Odyssey / Original Screenplay (1965)</li>
+                                <li class="subtag script-tag" id="text-80">  The Souvenir Program from the Cinerama Release of 2001</li>
+                            </ul>
+                        </nav>
+                        <nav class="tag-content" id="interview-tags">
+                            <ul class="article-tags">
+                                <li class="subtag interview-tag" id="text-80">  Dr. Strangelove... / Continuity Script</li>
+                                <li class="subtag interview-tag" id="text-81"> 2001: A Space Odyssey / Original Screenplay (1965)</li>
+                                <li class="subtag interview-tag" id="text-82">  The Souvenir Program from the Cinerama Release of 2001</li>
+                            
+                            </ul>
+                        </nav>
+                        <nav class="tag-content" id="resources-tags"></nav>
+                        <nav class="tag" id="faq-tag"></nav>
+                    </div>
                 </div>
 
             </section>
-            
+
         <!-- Right -->
             <section class="right-content" >
-                <article class="article">
+                <article class="article-container">
                     
                     <!-- Excerpt from Cinema 2, The Time Image -->
-                    <div style="display: none;" id="text-01" class="article-text">
+                    <div id="text-1" class="article-text">
                         <h3>Excerpt from Cinema 2, <br> The Time Image</h3>
                         <p> by Gilles Deleuze</p>
                         <p id="fiy-text">  Excerpt taken from the book: Cinema 2: The Time-Image, by Gilles Deleuze, trans. 
@@ -258,7 +259,7 @@
                     </div>
 
                     <!-- Excerpts from The Wolf at the Door: Stanley Kubrick, History and the Holocaust -->
-                    <div  id="text-02" class="article-text">
+                    <div  id="text-2" class="article-text">
                         <h3>Excerpts from The Wolf at the Door: Stanley Kubrick, History and the Holocaust</h3>
                         <p> by Geoffrey Cocks</p>
                         <p id="fiy-text">  The Wolf at the Door: Stanley Kubrick, History and the Holocaust (New York: Peter Lang, 2004) by Geoffrey Cocks, 1-3, 14-17, 33-38, 67-76, 156-58, 246-55. This article is the copyright of Geoffrey Cocks and is reproduced by permission of the author. </p>
@@ -294,18 +295,252 @@
 
                         </p>
                     </div>
+
+                    <div id="text-3" class="article-text">
+                        <p>THIS IS THE ARTICLE CONTAINER</p>
+                    </div>
+                    <div id="text-4" class="article-text">
+
+                        <p>THIS IS THE ARTICLE CONTAINER</p>
+
+                    </div>
+                    <div id="text-5" class="article-text">
+                        <img src="../media/images/kubrick-site/no-content.png" alt="kubrick face with a warning that there is no content" />
+
+                        <p>THIS IS THE ARTICLE CONTAINER</p>
+                    </div>
+                    <div id="text-6" class="article-text">
+                        <p>THIS IS THE ARTICLE CONTAINER</p>
+                    </div>
+                    <div id="text-7" class="article-text">
+                        <p>THIS IS THE ARTICLE CONTAINER</p>
+                    </div>
+                    <div id="text-8" class="article-text">
+                        <p>THIS IS THE ARTICLE CONTAINER</p>
+                    </div>
+                    <div id="text-9" class="article-text">
+                        <p>THIS IS THE ARTICLE CONTAINER</p>
+                    </div>
+                    <div id="text-10" class="article-text">
+                        <p>THIS IS THE ARTICLE CONTAINER</p>
+                    </div>
+                    <div id="text-11" class="article-text">
+                        <p>THIS IS THE ARTICLE CONTAINER</p>
+                    </div>
+                    <div id="text-12" class="article-text">
+                        <p>THIS IS THE ARTICLE CONTAINER</p>
+                    </div>
+                    <div id="text-13" class="article-text">
+                        <p>THIS IS THE ARTICLE CONTAINER</p>
+                    </div>
+                    <div id="text-14" class="article-text">
+                        <p>THIS IS THE ARTICLE CONTAINER</p>
+                    </div>
+                    <div id="text-15" class="article-text">
+                        <p>THIS IS THE ARTICLE CONTAINER</p>
+                    </div>
+                    <div id="text-16" class="article-text">
+                        <p>THIS IS THE ARTICLE CONTAINER</p>
+                    </div>
+                    <div id="text-17" class="article-text">
+                        <p>THIS IS THE ARTICLE CONTAINER</p>
+                    </div>
+                    <div id="text-18" class="article-text">
+                        <p>THIS IS THE ARTICLE CONTAINER</p>
+                    </div>
+                    <div id="text-19" class="article-text">
+                        <p>THIS IS THE ARTICLE CONTAINER</p>
+                    </div>
+                    <div id="text-20" class="article-text">
+                        <p>THIS IS THE ARTICLE CONTAINER</p>
+                    </div>
+                    <div id="text-21" class="article-text">
+                        <p>THIS IS THE ARTICLE CONTAINER</p>
+                    </div>
+                    <div id="text-22" class="article-text">
+                        <p>THIS IS THE ARTICLE CONTAINER</p>
+                    </div>
+                    <div id="text-23" class="article-text">
+                        <p>THIS IS THE ARTICLE CONTAINER</p>
+                    </div>
+                    <div id="text-24" class="article-text">
+                        <p>THIS IS THE ARTICLE CONTAINER</p>
+                    </div>
+                    <div id="text-25" class="article-text">
+                        <p>THIS IS THE ARTICLE CONTAINER</p>
+                    </div>
+                    <div id="text-26" class="article-text">
+                        <p>THIS IS THE ARTICLE CONTAINER</p>
+                    </div>
+                    <div id="text-27" class="article-text">
+                        <p>THIS IS THE ARTICLE CONTAINER</p>
+                    </div>
+                    <div id="text-28" class="article-text">
+                        <p>THIS IS THE ARTICLE CONTAINER</p>
+                    </div>
+                    <div id="text-29" class="article-text">
+                        <p>THIS IS THE ARTICLE CONTAINER</p>
+                    </div>
+                    <div id="text-30" class="article-text">
+                        <p>THIS IS THE ARTICLE CONTAINER</p>
+                    </div>
+                    <div id="text-31" class="article-text">
+                        <p>THIS IS THE ARTICLE CONTAINER</p>
+                    </div>
+                    <div id="text-32" class="article-text">
+                        <p>THIS IS THE ARTICLE CONTAINER</p>
+                    </div>
+                    <div id="text-33" class="article-text">
+                        <p>THIS IS THE ARTICLE CONTAINER</p>
+                    </div>
+                    <div id="text-34" class="article-text">
+                        <p>THIS IS THE ARTICLE CONTAINER</p>
+                    </div>
+                    <div id="text-35" class="article-text">
+                        <p>THIS IS THE ARTICLE CONTAINER</p>
+                    </div>
+                    <div id="text-36" class="article-text">
+                        <p>THIS IS THE ARTICLE CONTAINER</p>
+                    </div>
+                    <div id="text-37" class="article-text">
+                        <p>THIS IS THE ARTICLE CONTAINER</p>
+                    </div>
+                    <div id="text-38" class="article-text">
+                        <p>THIS IS THE ARTICLE CONTAINER</p>
+                    </div>
+                    <div id="text-39" class="article-text">
+                        <p>THIS IS THE ARTICLE CONTAINER</p>
+                    </div>
+                    <div id="text-40" class="article-text">
+                        <p>THIS IS THE ARTICLE CONTAINER</p>
+                    </div>
+                    <div id="text-41" class="article-text">
+                        <p>THIS IS THE ARTICLE CONTAINER</p>
+                    </div>
+                    <div id="text-42" class="article-text">
+                        <p>THIS IS THE ARTICLE CONTAINER</p>
+                    </div>
+                    <div id="text-43" class="article-text">
+                        <p>THIS IS THE ARTICLE CONTAINER</p>
+                    </div>
+                    <div id="text-44" class="article-text">
+                        <p>THIS IS THE ARTICLE CONTAINER</p>
+                    </div>
+                    <div id="text-45" class="article-text">
+                        <p>THIS IS THE ARTICLE CONTAINER</p>
+                    </div>
+                    <div id="text-46" class="article-text">
+                        <p>THIS IS THE ARTICLE CONTAINER</p>
+                    </div>
+                    <div id="text-47" class="article-text">
+                        <p>THIS IS THE ARTICLE CONTAINER</p>
+                    </div>
+                    <div id="text-48" class="article-text">
+                        <p>THIS IS THE ARTICLE CONTAINER</p>
+                    </div>
+                    <div id="text-49" class="article-text">
+                        <p>THIS IS THE ARTICLE CONTAINER</p>
+                    </div>
+                    <div id="text-50" class="article-text">
+                        <p>THIS IS THE ARTICLE CONTAINER</p>
+                    </div>
+                    <div id="text-51" class="article-text">
+                        <p>THIS IS THE ARTICLE CONTAINER</p>
+                    </div>
+                    <div id="text-52" class="article-text">
+                        <p>THIS IS THE ARTICLE CONTAINER</p>
+                    </div>
+                    <div id="text-53" class="article-text">
+                        <p>THIS IS THE ARTICLE CONTAINER</p>
+                    </div>
+                    <div id="text-54" class="article-text">
+                        <p>THIS IS THE ARTICLE CONTAINER</p>
+                    </div>
+                    <div id="text-55" class="article-text">
+                        <p>THIS IS THE ARTICLE CONTAINER</p>
+                    </div>
+                    <div id="text-56" class="article-text">
+                        <p>THIS IS THE ARTICLE CONTAINER</p>
+                    </div>
+                    <div id="text-57" class="article-text">
+                        <p>THIS IS THE ARTICLE CONTAINER</p>
+                    </div>
+                    <div id="text-58" class="article-text">
+                        <p>THIS IS THE ARTICLE CONTAINER</p>
+                    </div>
+                    <div id="text-59" class="article-text">
+                        <p>THIS IS THE ARTICLE CONTAINER</p>
+                    </div>
+                    <div id="text-60" class="article-text">
+                        <p>THIS IS THE ARTICLE CONTAINER</p>
+                    </div>
+                    <div id="text-61" class="article-text">
+                        <p>THIS IS THE ARTICLE CONTAINER</p>
+                    </div>
+                    <div id="text-62" class="article-text">
+                        <p>THIS IS THE ARTICLE CONTAINER</p>
+                    </div>
+                    <div id="text-63" class="article-text">
+                        <p>THIS IS THE ARTICLE CONTAINER</p>
+                    </div>
+                    <div id="text-64" class="article-text">
+                        <p>THIS IS THE ARTICLE CONTAINER</p>
+                    </div>
+                    <div id="text-65" class="article-text">
+                        <p>THIS IS THE ARTICLE CONTAINER</p>
+                    </div>
+                    <div id="text-66" class="article-text">
+                        <p>THIS IS THE ARTICLE CONTAINER</p>
+                    </div>
+                    <div id="text-67" class="article-text">
+                        <p>THIS IS THE ARTICLE CONTAINER</p>
+                    </div>
+                    <div id="text-68" class="article-text">
+                        <p>THIS IS THE ARTICLE CONTAINER</p>
+                    </div>
+                    <div id="text-69" class="article-text">
+                        <p>THIS IS THE ARTICLE CONTAINER</p>
+                    </div>
+                    <div id="text-70" class="article-text">
+                        <p>THIS IS THE ARTICLE CONTAINER</p>
+                    </div>
+                    <div id="text-71" class="article-text">
+                        <p>THIS IS THE ARTICLE CONTAINER</p>
+                    </div>
+                    <div id="text-72" class="article-text">
+                        <p>THIS IS THE ARTICLE CONTAINER</p>
+                    </div>
+                    <div id="text-73" class="article-text">
+                        <p>THIS IS THE ARTICLE CONTAINER</p>
+                    </div>
+                    <div id="text-74" class="article-text">
+                        <p>THIS IS THE ARTICLE CONTAINER</p>
+                    </div>
+                    <div id="text-74" class="article-text"><p>THIS IS THE ARTICLE CONTAINER</p></div>
+                    <div id="text-75" class="article-text"><p>THIS IS THE ARTICLE CONTAINER</p></div>
+                    <div id="text-76" class="article-text"><p>THIS IS THE ARTICLE CONTAINER</p></div>
+                    <div id="text-77" class="article-text"><p>THIS IS THE ARTICLE CONTAINER</p></div>
+                    <div id="text-78" class="article-text"><p>THIS IS THE ARTICLE CONTAINER</p></div>
+                    <div id="text-79" class="article-text"><p>THIS IS THE ARTICLE CONTAINER</p></div>
+                    <div id="text-80" class="article-text"><p>THIS IS THE ARTICLE CONTAINER</p></div>
+                    <div id="text-81" class="article-text"><p>THIS IS THE ARTICLE CONTAINER</p></div>
+                    <div id="text-82" class="article-text"><p>THIS IS THE ARTICLE CONTAINER</p></div>
+
+
+                    
                 </article>
             </section>
+
+            <div class="ui-draggable ui-draggable-handle" id="handle">
+            </div>
         </div>
 
-
         <script
-			  src="https://code.jquery.com/jquery-3.6.0.min.js"
-			  integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
-			  crossorigin="anonymous"></script>
-
-        <script src="../script/script-2.js"></script>
-
+        src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+        crossorigin="anonymous"></script>
+        <script src="https://code.jquery.com/ui/1.13.0/jquery-ui.js"></script>
+        <script src="../script/script-01.js"></script>
     </body>
     
 </html>
