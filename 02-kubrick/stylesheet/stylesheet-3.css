@@ -145,11 +145,20 @@ p {
     background-color: #f3f3f3;
 }
 
+.right-wrapper {
+
+    position: relative;
+    margin: 3em auto;
+    max-width: 650;
+    min-width: 250;
+
+    transition: 0.1s;
+}
+
 .right-content h3{ 
     font-family: 'IBM Plex Mono', monospace;
     font-size: 1.5em;
     line-height: 1.1;
-    padding-top: 1.4em;
     letter-spacing: -1;
     word-spacing: -5;
     font-weight: 600;
@@ -174,12 +183,18 @@ br {
     line-height: 150%;
 }
 
+.hashtag-div {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    min-width: 200;
+}
 
 .hashtag { 
     width: auto;
     position: relative;    
     padding: 0.4em 1em; 
-    margin:1em 0.5em 0.5em 0em ;
+    margin: 0.5em 0.5em 0em ;
     border: 2px solid black;
     border-radius: 15px;
 
