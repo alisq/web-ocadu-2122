@@ -15,7 +15,7 @@ $(".tag-button").click(function(){
     console.log(buttonId + " clicked");
 
     $(".tags-container #"+buttonId).toggle();
-    $(".tags-container nav:not(#"+buttonId+")").css("display","none");
+    $(".tags-container nav:not(#"+buttonId+")").hide();
     
     $(this).css({
         "background":"black",
@@ -50,11 +50,11 @@ $(".subtag").click(function(){
     $("#handle").css("display","block");
     $("#handle").draggable({
         axis: "x",
-        containment: "#wrapper",
+        containment: "body",
         zIndex: 100,
         drag: function(event, ui){
-            ui.position.left = Math.min(Math.max( 50, ui.position.left ), width - 100);
-            let x = ui.position.left - 50;
+            ui.position.left = 100, ui.position.left;
+            let x = ui.position.left - 12.5;
     
             $(".left-index").css("width", x);
         }

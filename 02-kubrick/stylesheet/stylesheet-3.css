@@ -7,10 +7,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:ital@0;1&family=IBM+Plex+Mono:wght@400;500;600&family=IBM+Plex+Sans:ital@0;1&display=swap');
 
 
+body {
+}
+
 .wrapper {
     position: relative;
     width: 100vw;
-    height: 270vh;
+    height: 100%;
     padding: 0;
     background-color: #f3f3f3;
 
@@ -22,17 +25,28 @@
 section {
     margin:0 0 30 0;
     width: 100%;
-    height: 100%;
+    height: 100vh;
     position: relative;
     overflow-y: scroll;
-    padding: 3em 3.5em;
 }
 
 /* INDEX */
 .left-index {
     position: relative;
-    background: linear-gradient(180deg, rgba(36, 54, 120, 0) 0%, rgba(36, 54, 120, 0.8) 100%);    flex-direction: column;
+    background-image: url("../media/bg-gradient/1.png");
+    background-repeat:no-repeat;
+    background-position:left top;
+    background-size:100% 100%;
+    /* background: linear-gradient(180deg, rgba(36, 54, 120, 0) 0%, rgba(36, 54, 120, 0.8) 100%);    flex-direction: column; */
     overflow-x: hidden ;
+    padding: 3em 3.5em;
+
+}
+
+.left-wrapper {
+    margin: 0 auto;
+    max-width: 800px;
+    min-width: 250px;
 }
 
 .back-button {    
@@ -56,11 +70,24 @@ section {
     letter-spacing: -1;
     word-spacing: -10;
     font-weight: 600;
+}
+
+.index-tag-main {
+    margin: 0 0 1.5em 0;
+}
+
+.index-tag {
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 1.3em;
 
 }
 
 .tag-content {
     margin: 2em 0;
+}
+
+.keyword-tags-wrapper, .theme-tags-wrapper {
+    display: none;
 }
 
 .navigation-tags {
@@ -98,7 +125,6 @@ section {
 
 .extra-bt {
     border: 1.7px dashed #000000;
-
 }
 
 p {
@@ -115,6 +141,8 @@ p {
     padding: 0;
   }
 .subtag {
+    display: none;
+
     width: 90%;
     position: relative;    
     padding: 0.8em 1.5em; 
@@ -130,14 +158,22 @@ p {
     white-space: nowrap;
 
     overflow-x: hidden;
-
 }
+
+.letter-index{
+    display: none;
+}
+
 
 .subtag:hover {
     background-color: black; /* Green */
     color: white;
 }
 
+.letter-index:hover {
+    
+    pointer-events: none;
+}
 
 /* CONTENT */
 .right-content {
@@ -146,13 +182,10 @@ p {
 }
 
 .right-wrapper {
-
     position: relative;
     margin: 3em auto;
-    max-width: 650;
-    min-width: 250;
-
-    transition: 0.1s;
+    max-width: 650px;
+    min-width: 250px;
 }
 
 .right-content h3{ 
@@ -165,7 +198,7 @@ p {
     
 }
 
-right-content p {
+.right-content p {
     font-family: 'IBM Plex Sans', sans-serif;    
     font-size: 1em;
     line-height: 1.5;
@@ -182,6 +215,7 @@ right-content p {
 br { 
     line-height: 150%;
 }
+
 
 .hashtag-div {
     display: flex;
