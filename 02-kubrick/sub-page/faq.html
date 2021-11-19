@@ -23,7 +23,7 @@
             <div class="left-wrapper">
             <!-- Title -->
                 <div class="title">
-                    <p class="back-button"><a href="../index.html"><span style="font-size:4em;">&#9732;</span> </a></p>
+                    <p class="back-button"><a href="../index.html">&larr;</a></p>
                     <h1>
                         The Kubrick FAQ
                     </h1>
@@ -31,7 +31,7 @@
 
             <!-- Tags -->
             <nav class="nav-main">
-                <p class="index-tag-main">Based on: <span class="index-tag" id="theme-tags"> Theme </span> | <span class="index-tag" id="keyword-tags"> Keywords </span> </p>
+                <p class="index-tag-main">Based on: <a class="index-tag" id="theme-tags"> Theme</a>  |  <a class="index-tag" id="keyword-tags"> Keywords</a> </p>
             </nav>
                 <div class ="sub-nav-wrapper">
                     <div class="theme-tags-wrapper">
@@ -81,8 +81,8 @@
                 <!-- ON KUBRICK -->
                     <article class="tag-content" >
                         <ul class="question-tags">
-                            <li class="subtag on-kubrick" id="question-1">The Shining: I noticed a helicopter shadow in the opening, is this a mistake?</li>
-                            <li class="subtag on-kubrick" id="question-2">Eyes Wide Shut: Why did Harvey Keitel leave the set? </li>
+                            <li class="subtag on-kubrick" id="question-1"><a href="#question-1-answer"> The Shining: I noticed a helicopter shadow in the opening, is this a mistake? </a></li>
+                            <li class="subtag on-kubrick" id="question-2"><a href="#question-2-answer">Eyes Wide Shut: Why did Harvey Keitel leave the set?</a> </li>
                             <li class="subtag on-kubrick" id="question-3">The Shining: What is that strange Bear scene about (and is it a bear)?</li>
                             <li class="subtag on-kubrick" id="question-4">The Shining: What is that strange Bear scene about (and is it a bear)?</li>
                             <li class="subtag on-kubrick" id="question-5">Dr Strangelove : Does the Russian Ambassador actually speak in Russian?</li>
@@ -199,18 +199,11 @@
         <!-- Right -->
         
             <section class="right-content" >
-                <div class="hashtag-div" style="position: sticky;">
-                    <button class="hashtag question-1"> On Kubrick </button>
-                    <button class="hashtag question-1"> The Shining </button>
-                    <button class="hashtag question-1"> Helicopter shadow  </button>
-                    <button class="hashtag question-2"> Joyce Paul </button>
-                    <button class="hashtag question-2"> Keitel Harvey </button>
-                    <button class="hashtag question-2"> Rumour</button>     
-                </div>
+
 
                 <div class="right-wrapper">
                     <article class="article">
-                        <div id="question-1" class="question-text question-1" >
+                        <div id="question-1-answer" class="question-text question-1" >
                             <h3>1/ I noticed a helicopter shadow in The Shining, is this a mistake?</h3>
                             <p> ‘"This is probably the single most often-asked and most irritating question to recur over and over again on alt.movies.kubrick.
                                 <br>
@@ -273,9 +266,11 @@
                                 <br><br>
 
                                 BS, GS & RM
+                                <br><br>
+
                             </p>
                         </div>
-                        <div id="question-2" class="question-text question-2">
+                        <div id="question-2-answer" class="question-text question-2">
                             <h3> 2/ Why did Harvey Keitel leave the set of Eyes Wide Shut?</h3>
                             <p>The official story goes that Harvey Keitel dropped out of Eyes Wide Shut because of a commitment to play Elvis Presley in "Graceland." Although amk gave birth to an all together more colourful rumour to explain the departure.
                                 <br><br>
@@ -301,7 +296,7 @@
                                 
                                 </p>
                         </div>
-                        <div id="question-3" class="question-text question-3" >
+                        <div id="question-3-answer" class="question-text question-3" >
                             <h3> 3/ What is that strange Bear scene in The Shining about (and is it a bear)?</h3>
                             <p> The "bear scene" is a brief moment in The Shining when Wendy, beginning to see the same "1920's Party" events that Jack's been seeing, is wandering through the halls of the hotel. As she looks around a corner, she sees two shapes huddled over the edge of a bed. As she looks, they are revealed to be two men, possibly engaged in oral sex. One is wearing what looks to be a bear (1) costume.
                                 <br><br>
@@ -317,9 +312,11 @@
                                 It's difficult to say why this second scene remains in the film; as it's somewhat confounding without all of the set-up that King provides in his book. Perhaps its jarring incongruity is reason enough for its inclusion, illustrating as it does Wendy's extreme disorientation at that point in the film. Another explanation is that the background on Derwent may have been scripted and filmed, (2) but excised in the final cut.
                                 
                                 BS
+                                <br><br>
+
                             </p>
                         </div>
-                        <div id="question-2" class="question-text question-2">
+                        <div id="question-4-answer" class="question-text question-2">
                             <h3> 2/ Why did Harvey Keitel leave the set of Eyes Wide Shut?</h3>
                             <p>The official story goes that Harvey Keitel dropped out of Eyes Wide Shut because of a commitment to play Elvis Presley in "Graceland." Although amk gave birth to an all together more colourful rumour to explain the departure.
                                 <br><br>
@@ -341,18 +338,23 @@
                                     
                                 
                                     
-                                
+                                <br><br>
+
                                 
                                 </p>
                         </div>
                     </article>
                 </div>
             </section>
+
+            <div class="ui-draggable ui-draggable-handle" id="handle">
+            </div>
         </div>
         <script
-			  src="https://code.jquery.com/jquery-3.6.0.min.js"
-			  integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
-			  crossorigin="anonymous"></script>
+        src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+        crossorigin="anonymous"></script>
+        <script src="https://code.jquery.com/ui/1.13.0/jquery-ui.js"></script>
         <script src="../script/faq-script.js"></script>
 
     </body>

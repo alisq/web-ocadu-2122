@@ -9,44 +9,35 @@
 
 .wrapper {
     width: 100vw;
-    height: 400vh;
+    height: 100vh;
     padding: 0;
     background-color: #f3f3f3;
 
-
-    display: flex;
-    flex-direction: row;
-    align-items: flex-start;
 }
 
 section {
-    margin:0 0 30 0;
+    margin: 0;
     width: 100%;
-    height: 100%;
-    position: relative;
-    padding: 3em 3.5em;
-    overflow-y:scroll;
+    height: calc(100vh - 3em);
+    padding: 3em 3em 0 3em;
+    overflow-y: scroll;
     overflow-x: hidden ;
-
-
 }
 
 /* INDEX */
 .left-index {
-    position: relative;
     background-image: url("../media/bg-gradient/4.png");
     background-repeat:no-repeat;
     background-position:left top;
     background-size:100% 100%;
     /* background: linear-gradient(180deg, #F8F4EF 0%, rgba(223, 116, 39, 0.45) 100%); */
-    flex-direction: column;
-    transition: 0.1s;
-    min-width: 250;
 }
 
 .left-container {
     margin: 0 auto;
     max-width: 700;
+    transform: translateX(-2em);
+
 }
 
 .title {
@@ -65,11 +56,6 @@ section {
     word-spacing: -10;
     font-weight: 600;
 
-}
-.back-button {    
-    margin-top : 0;
-    margin-bottom: 1em;
-    height: 3.5em;
 }
 
 .tag-content {
@@ -102,15 +88,23 @@ section {
     font-size: 1.0em;
     letter-spacing: -0.5;
     word-spacing: -0.75 ;
-
     margin: 5px 4px;
 
     flex-grow: 1;
+
+    -webkit-transition: ease-out 0.4s;
+    -moz-transition: ease-out 0.4s;
+    transition: ease-out 0.4s;
+
+    cursor: pointer;
+
 }
 
 .tag-button:hover {
-    background-color: black; /* Green */
+    background-color: black;
     color: white;
+    /* box-shadow: inset 400px 0 0 0 #D80286; */
+
 }
 
 .extra-bt {
@@ -148,6 +142,7 @@ p {
 
     overflow-x: hidden;
 
+    cursor: pointer;
 }
 
 .subtag:hover {
@@ -155,16 +150,16 @@ p {
     color: white;
 }
 
+.subtag:hover p{
+    transform: translateX(-100%);
+}
+
+
 
 /* CONTENT */
 .right-content {
     display: none;
-    position: relative;
     background-color: #f3f3f3;
-    resize:horizontal;
-    transition: 0.1s;
-
-
 }
 
 .right-content h3{ 
@@ -185,13 +180,15 @@ p {
     text-align:left;
     letter-spacing: -1;
     word-spacing: -5;
-    color:rgb(209, 100, 49);
+    color:rgba(214,214,206);
 }
 
 .article-text { 
     margin: 0 auto;
     max-width: 700;
     display:none;
+    transform: translateX(-2 em);
+
 }
 
 right-content p {
@@ -229,7 +226,28 @@ br {
     top: calc(50vh - 12.5px);
     border-width: 1.5px;
     border-style: solid;
-    background-color:rgba(223, 116, 39, 0.45);
+    background-color:black;
     cursor: grab;
 }
 
+.back-button {
+    margin-top: 0;
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 3em;
+    display: block;
+    transform :translateY(0.5em);
+}
+
+a:link { 
+    text-decoration: none;
+    color:black;
+}
+
+a:visited {
+    text-decoration: none;
+    color: black;
+  }
+a:hover {
+text-decoration: none;
+color: white;
+}

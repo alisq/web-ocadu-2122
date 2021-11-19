@@ -46,17 +46,26 @@ $(".article-tags .subtag").click(function(){
 // SPLIT SCREEN 
 
 $(".subtag").click(function(){
+    $(".wrapper").css({
+        "display": "grid",
+        "grid-template-columns": "1fr 1fr"
+    })
+    $("#handle").css("left","calc(50vw - 12.5px)");
+
     $(".right-content").css("display","block");
     $("#handle").css("display","block");
     $("#handle").draggable({
         axis: "x",
-        containment: "body",
+        containment: [100, 0, $(window).width()-100 , $(window).width()],
         zIndex: 100,
         drag: function(event, ui){
-            ui.position.left = 100, ui.position.left;
-            let x = ui.position.left - 12.5;
-    
-            $(".left-index").css("width", x);
+            let fromLeft = ui.offset.left +12.5;
+            console.log(fromLeft);
+
+            $(".wrapper").css({
+                
+                "grid-template-columns": fromLeft + "px 1fr"
+            });
         }
     })
 

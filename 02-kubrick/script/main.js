@@ -1,15 +1,21 @@
-let oneImage
+let img;
 
 let imgUnits = [];
 let imageSet = [];
 
 function preload(){
-    oneImage = loadImage('../media/kubrick/02.jpg');
+    for(let e=1; e<11; e++){
+        img = loadImage('../media/bg-main/'+ e +'.jpg');
+        imageSet.push(img);
+    }
 }
 
 let py = 150;
 let px = 400;
 
+function windowResized() {
+    resizeCanvas(windowWidth, windowHeight);
+}
 
 function setup(){
     canvas = createCanvas(windowWidth, windowHeight);
@@ -17,56 +23,50 @@ function setup(){
     canvas.style("z-index","-1");
 
     for(let i=0; i< imageSet.length; i++ ){
-        let x = random(50,150);
-        let r = random(50,150);
-        let y = canvas.height + r;
-        let imgUnit = new Unit(x,y,r);
+        let x = random(-10,windowWidth-100);
+        let r = random(100,300);
+        let y = random(-700,200);
+        let imgUnit = new Unit(x,y,r, imageSet[i]);
         imgUnits.push(imgUnit);
     }
-
+    console.log(imgUnits);
 }
 
 
 
 function draw(){
     canvas.background(0);
-    fill(200,200,50,100);
-    rect(800,py+100,100, 200);
-    image(oneImage,px, py, 200,200);
-    image(oneImage,px+450, py-250, 100,120);
-
-    py += 5;
-
-    if(py-300 > canvas.height){
-        py = -250;
-        px = px + random(-500,400);
+    for(let i=0; i< imgUnits.length; i++ ){
+    imgUnits[i].show();
+    imgUnits[i].move();
     }
-    
 }
 
-function windowResized() {
-    resizeCanvas(windowWidth, windowHeight);
-  }
+
 
 
 
 class Unit {
-    contructor(x, y, r, imageSet) {
+    constructor(x, y, r, imageSet) {
         this.x = x;
         this.y = y
         this.r = r;
-        this.u = random(imageSet);
+        this.u = imageSet;
     }
     move(){
-        this.y -= 1;
-        let py = this.y - this.r/2;
-        if(py > 0){
-            this.y = canvas.height+ this.r;
+        let ar = this.u.width / this.u.height;
+        this.y += 2;
+        if(this.y-(this.r*ar) > windowHeight){
+            this.r = random(100,300);
+            this.x = random(50,windowWidth - 100);
+            this.y = random(-700,-100);
         }
     }
 
     show(){
-        fill(255);
-        rect(this.x,this.y,this.r, this.r);
+        let ar = this.u.width / this.u.height;
+        fill(200,200,50,100);
+        rect(this.x,this.y,this.r*ar,this.r);
+        image(this.u, this.x,this.y,this.r*ar,this.r);
     }
 }

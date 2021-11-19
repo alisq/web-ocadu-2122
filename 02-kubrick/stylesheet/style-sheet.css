@@ -1,12 +1,17 @@
+
+
 body {
     margin: 0;
+    background: black;
     /* background-image: url("../media/bg-gradient/1.png"); */
     /* background-repeat:no-repeat;
     background-position:left top;
     background-size:100% 100%; */
     /* background: linear-gradient(180deg, rgba(36, 54, 120, 0) 0%, rgba(36, 54, 120, 0.8) 100%);    flex-direction: column; */
+    width: 100%;
     height: 100vh;
-
+    overflow-x: hidden;
+    overflow-y: scroll;
 
 }
 
@@ -17,20 +22,13 @@ body {
     top:0;
     width: 100%;
     height: 100%;
-
 }
 
 .wrapper {
     position: relative;
     top: 25%;
     margin: 0 auto;
-    max-width: 40em;
     max-height: 35em;
-    padding: 2em;
-    border-radius: 2.5em;
-
-    background-color:blanchedalmond; 
-    box-shadow: 0 5px 13px 0 rgba(0,0,0,0.2), 0 5px 16px 0 rgba(0,0,0,0.19);    
 
 }
 .bg-container{
@@ -42,58 +40,83 @@ body {
 
 
 h1 { 
-    margin: 0;
-    color: black;
+    margin: 1em 0em 0 0;
+    color: white;
     font-family: 'IBM Plex Mono', monospace;
-    font-size: 3.5em;
-    padding: 0.5em 0;
+    font-size: 6em;
+    padding: 0.5em 0 0 0;
     text-align:center;
     letter-spacing: -1.5;
-}
 
-.description { 
-    color: black;
-    font-family: 'IBM Plex Sans', sans-serif;
-    font-size: 0.95em;
-    line-height: 2.3;
+}
+#introduction {
     text-align:center;
+
+    margin:0 auto;
+    padding: 0 3.5em;
+}
+.description { 
+    
+    color: white;
+    font-family: 'IBM Plex Sans', sans-serif;
+    font-size: 16px;
+    line-height: 1;
+    text-align:center;
+    margin: 1em auto 0 auto;
+    max-width: 650px;
+
 }
 
+.door-row {
+    display: flex;
+    flex-flow: row wrap;
+    margin-top: 3em;
+    justify-content: center;
 
+}
 
 .door { 
     width: auto;
-    padding: 0.4em 1em; 
-    border: 2px solid black;
-    border-radius: 15px;
+    margin: 2em 0.5em ;
+    padding: 0.6em 1em; 
+    border: 1.5px solid white;
+    border-radius: 1em;
+    box-shadow: 0 5px 13px 0 rgba(0,0,0,0.2), 0 5px 16px 0 rgba(0,0,0,0.19);    
+
     white-space: nowrap;
     font-family: 'IBM Plex Mono', monospace;
-    font-size: 0.9em;
-    
-
+    font-size: 16px;
+    line-height: 3.6;
     overflow-x: hidden;
 }
 
+
 a:link { 
     text-decoration: none;
-    color:rgba(36, 54, 120, 0.8);
+    color:white;
 }
 
 a:visited {
     text-decoration: none;
-    color: rgba(36, 54, 120, 0.8);
+    color: white;
   }
 
+
+
 .door:hover { 
-    background-color: black;
+    background-color: rgb(238, 111, 20);
 }
+
+
 
 a:hover {
     text-decoration: none;
-    color: rgb(238, 111, 20);
+    color: white;
   }
 
   a:active {
     text-decoration: none;
-    color: blue;
+    color: white;
   }
+
+  
