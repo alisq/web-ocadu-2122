@@ -21,7 +21,7 @@ section {
     height: calc(100vh - 3em);
     padding: 3em 3em 0 3em;
     overflow-y: scroll;
-    overflow-x: hidden ;
+    overflow-x: hidden;
 }
 
 /* INDEX */
@@ -30,6 +30,8 @@ section {
     background-repeat:no-repeat;
     background-position:left top;
     background-size:100% 100%;
+    overflow-x: hidden ;
+
     /* background: linear-gradient(180deg, #F8F4EF 0%, rgba(223, 116, 39, 0.45) 100%); */
 }
 
