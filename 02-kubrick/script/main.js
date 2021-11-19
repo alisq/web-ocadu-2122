@@ -5,7 +5,7 @@ let imageSet = [];
 
 function preload(){
     for(let e=1; e<11; e++){
-        img = loadImage('media/bg-main'+ e +'.jpg');
+        img = loadImage('../media/bg-main'+ e +'.jpg');
         imageSet.push(img);
     }
 }
