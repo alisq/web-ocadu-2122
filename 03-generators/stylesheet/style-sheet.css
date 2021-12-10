@@ -1,0 +1,48 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body { 
+    background-color:black;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono&display=swap');
+
+h1 {
+    position:static;
+    top: 1em;
+    left: 1em;
+    margin: 30px;
+
+    font-size: 50px;
+    font-family: 'JetBrains Mono', monospace;
+    line-height: 1;
+    color:aliceblue;
+}
+
+#canvas-container {
+    position: absolute;
+    top:0;
+    left:0; 
+    width: 100vw;
+    height: 100vh;
+    
+    z-index: -10;
+}
+
+#toolbar-container {
+    position: relative;
+    width: 250px;
+    height: auto;
+    top: 40px;
+    left: 20px; 
+    background-color: white;
+    border: 2px solid black;
+    border-radius: 5px;
+}
+
+#option-tag {
+    font-family: 'JetBrains Mono', monospace;
+    padding: 10px;
+}

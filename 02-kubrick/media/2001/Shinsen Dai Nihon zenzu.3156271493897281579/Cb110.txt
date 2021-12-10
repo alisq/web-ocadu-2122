@@ -1,0 +1,24 @@
+Author	Sagano, Hikotaro
+Date	1891
+Short Title	Shinsen Dai Nihon zenzu.
+Publisher	Tokyo : Sagano Hikotaro
+Type	Pocket Map
+Obj Height cm	51
+Obj Width cm	109
+Scale 1	2,200,000
+Note	Copperplate print. In Japanese. Oriented with north to the upper right. Relief shown by hachures. 7 insets: Hokkaido zenbu -- Chishima zenbu -- Osumi Shichito Okinawa Shoto ... [et al.]. Includes views of points of interest, charts of mountains and rivers, list of prefectures, and legend. Shows sea routes with distance. In color, folded to 18 x 13 cm. East Asian Library call number: Cb110.
+Country	Japan
+Full Title	Shinsen Dai Nihon zenzu / Sagano Hikotaro. Kaisaihan. Meiji 24 [1891]
+List No	Cb110
+Series No	1
+Publication Author	Sagano, Hikotaro
+Pub Date	1891
+Pub Title	Shinsen Dai Nihon zenzu / Sagano Hikotaro. Kaisaihan. Meiji 24 [1891]
+Pub Note	See note field above.
+Pub List No	Cb110
+Pub Type	Pocket Map
+Pub Maps	1
+Pub Height cm	51
+Pub Width cm	109
+Image No	Cb110
+Institution	Japanese Historical Maps
