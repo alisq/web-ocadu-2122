@@ -5,18 +5,17 @@ let canvasWidth = window.innerWidth; - 300;
 let canvasHeight = window.innerHeight;;
 
 let input;
-let img;
+let img, img02;
 let imgSet =[];
 
-let tileSize = 50;
-let tile;
-let tiles = [];
+
 
 let threshold = 50;
 
 function preload(){
   
   img = loadImage('media/images/cat.jpg');
+  img02 = loadImage('media/images/rock-1.jpg');
   for(i=1; i<4; i++){
   imgSet[i-1] = loadImage('media/images/leaf-'+i+'.jpg');
   };
@@ -30,24 +29,39 @@ function setup(){
   canvas.parent('canvas-container');
   canvas.background(0);
 
-  let cols = img.width / tileSize;
-  let rows = img.height / tileSize;
-  let cells = cols * rows;
-
 
   // noLoop();
 }
 
 function draw(){
+  for(e=0; e<2; e++){
 
-  // console.log(tiles[3].toDataURL()); 
-  img.resize(img.width/3,img.height/3);
-  img.loadPixels();
+  filter02(img);
+  // DRAW FILTER 1
+  for(i=0; i<imgSet.length; i++){
+    filter01(imgSet[i]);
+  }
+  filter02(img02);
+  }
+
+
+}
+
+function filter02(item){
+  let tileSize = int(random(25,50));
+
+  let tiles = [];
+  let cols = item.width / tileSize;
+  let rows = item.height / tileSize;
+  let cells = cols * rows;
+
+  item.resize(item.width/3,item.height/3);
+  item.loadPixels();
     
-  for (var y=0; y< img.height-tileSize; y+= tileSize){
-      for(var x=0; x< img.width-tileSize; x += tileSize){
+  for (var y=0; y< item.height-tileSize; y+= tileSize){
+      for(var x=0; x< item.width-tileSize; x += tileSize){
         
-        let imgTile = img.get(x,y,tileSize,tileSize);
+        let imgTile = item.get(x,y,tileSize,tileSize);
 
         imgTile.loadPixels();
         for (let i = 0; i < 4 * (imgTile.width * imgTile.height); i += 4) {
@@ -62,11 +76,6 @@ function draw(){
     }
     
   }
-
-
-
-for (u = 0; u<2; u ++){
-  
   let numbers = [];
   console.log(tiles.length);
 
@@ -78,31 +87,21 @@ for (u = 0; u<2; u ++){
 
   let dt = random(100,windowHeight);
   let squareX = dt;
-  let squareY = random(100,300);
+  let squareY = random(item.height,windowHeight)-item.height;
   for(e=0; e<tiles.length; e++) {
     if( numbers.includes(e) == false ){
       image(tiles[e], squareX,squareY);
     }
 
     squareX += tileSize;
-    if (squareX >= img.width-tileSize+dt) {
+    if (squareX >= item.width-tileSize+dt) {
       squareX = dt;
       squareY += tileSize;    }
-  }
-  dt += random(200,500);
-    /// DRAW FILTER 1
-    for(i=0; i<imgSet.length; i++){
-      filter01(imgSet[i]);
-    }
+  }  
 }
 
 
-}
-
-function filter02(item){
-  
-}
-
+// FILTER 01
 function filter01(item){
   item.resize(item.width/3,item.height/3);
   item.loadPixels();
