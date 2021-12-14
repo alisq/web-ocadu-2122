@@ -35,27 +35,29 @@ function setup(){
 
 function draw(){
   for(e=0; e<2; e++){
-
-  filter02(img);
-  // DRAW FILTER 1
-  for(i=0; i<imgSet.length; i++){
+    filter02(img);
+    filter02(img02);
+    // DRAW FILTER 1
+    for(i=0; i<imgSet.length; i++){
     filter01(imgSet[i]);
-  }
-  filter02(img02);
+    }
+    tiles = [];
+    filter01(imgSet[1]);
+
   }
 
 
 }
 
 function filter02(item){
-  let tileSize = int(random(25,50));
+  let tileSize = int(random(60,70));
 
   let tiles = [];
   let cols = item.width / tileSize;
   let rows = item.height / tileSize;
   let cells = cols * rows;
 
-  item.resize(item.width/3,item.height/3);
+  item.resize(600,0);
   item.loadPixels();
     
   for (var y=0; y< item.height-tileSize; y+= tileSize){
@@ -86,7 +88,7 @@ function filter02(item){
 
 
   let dt = random(100,windowHeight);
-  let squareX = dt;
+  let squareX = random(0,windowWidth);
   let squareY = random(item.height,windowHeight)-item.height;
   for(e=0; e<tiles.length; e++) {
     if( numbers.includes(e) == false ){
@@ -96,14 +98,16 @@ function filter02(item){
     squareX += tileSize;
     if (squareX >= item.width-tileSize+dt) {
       squareX = dt;
-      squareY += tileSize;    }
-  }  
+      squareY += tileSize;    
+    }
+  }
+  tiles = [];  
 }
 
 
 // FILTER 01
 function filter01(item){
-  item.resize(item.width/3,item.height/3);
+  item.resize(500,0);
   item.loadPixels();
 
     for(let h = 0; h<item.height; h++){
