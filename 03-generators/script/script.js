@@ -1,24 +1,27 @@
-$.noConflict();
 
 let canvas; 
 let canvasWidth = window.innerWidth; - 300;
 let canvasHeight = window.innerHeight;;
 
-let input;
-let img, img02;
-let imgSet =[];
+let clearBut;
 
+let imgSet = [];
+let leafSet =[];
+let catSet = [];
+let indSet = [];
 
-
-let threshold = 50;
+let leafCheck, catCheck, indCheck;
 
 function preload(){
   
-  img = loadImage('media/images/cat.jpg');
-  img02 = loadImage('media/images/rock-1.jpg');
-  for(i=1; i<4; i++){
-  imgSet[i-1] = loadImage('media/images/leaf-'+i+'.jpg');
-  };
+  for(i=0; i<3; i++){
+    leafSet[i] = loadImage('media/images/leaf'+ i +'.jpg');
+    catSet[i] = loadImage('media/images/cat' + i + '.jpg');
+    indSet[i] = loadImage('media/images/building'+i+'.jpg')
+  }
+  
+
+
 }
 
 
@@ -28,25 +31,76 @@ function setup(){
   let canvas = createCanvas(canvasWidth,canvasHeight);
   canvas.parent('canvas-container');
   canvas.background(0);
+  leafCheck = createCheckbox('Leaf', false);
+  catCheck = createCheckbox('Cat', false);
+  indCheck = createCheckbox('Industrial', false);
 
+  leafCheck.addClass('checkbox');
+  catCheck.addClass('checkbox');
+  indCheck.addClass('checkbox');
 
-  // noLoop();
+  leafCheck.parent('option-tag');
+  catCheck.parent('option-tag');
+  indCheck.parent('option-tag');
+
+  clearBut = createButton('Remake');
+  clearBut.addClass('button');
+  clearBut.parent('toolbar-container');
+  clearBut.mousePressed(resetCanvas);
+
+  noLoop();
 }
 
 function draw(){
-  for(e=0; e<2; e++){
-    filter02(img);
-    filter02(img02);
-    // DRAW FILTER 1
-    for(i=0; i<imgSet.length; i++){
-    filter01(imgSet[i]);
+
+  leafCheck.changed(imgPush);
+  catCheck.changed(catPush);
+  indCheck.changed(indPush);
+}
+
+function resetCanvas(){
+  imgSet = [];
+  background(0);
+  $('input[type=checkbox]').each(function() 
+  { 
+        this.checked = false; 
+  }); 
+}
+
+function imgPush(){
+  var isFounded;
+  if(leafCheck.checked()){
+    imgSet.push(...leafSet);
+    for(let i = 0; i<imgSet.length; i++){
+      filter01(imgSet[i]);
     }
-    tiles = [];
-    filter01(imgSet[1]);
+  } else  {
+    
+    console.log('leaf unchecked');
+  }
+}
+function catPush(){
+  if(catCheck.checked()){
+    imgSet.push(...catSet);
+    console.log(imgSet);
+    for(let i = 0; i<imgSet.length; i++){
+      filter02(imgSet[i]);
+    }
+  } else {
+    console.log('cat unchecked');
+  }
+}
+function indPush(){
+  if(indCheck.checked()){
+    imgSet.push(...indSet);
+    console.log(imgSet);
+    for(let i = 0; i<imgSet.length; i++){
+      filter02(imgSet[i]);
+    }
+  } else {
+    console.log('industry unchecked');
 
   }
-
-
 }
 
 function filter02(item){
@@ -57,7 +111,7 @@ function filter02(item){
   let rows = item.height / tileSize;
   let cells = cols * rows;
 
-  item.resize(600,0);
+  item.resize(500,0);
   item.loadPixels();
     
   for (var y=0; y< item.height-tileSize; y+= tileSize){
@@ -107,7 +161,8 @@ function filter02(item){
 
 // FILTER 01
 function filter01(item){
-  item.resize(500,0);
+  let threshold = 50;
+  item.resize(400,0);
   item.loadPixels();
 
     for(let h = 0; h<item.height; h++){
@@ -184,6 +239,11 @@ function filter01(item){
 // https://youtu.be/JUDYkxU6J0o
 //  https://openprocessing.org/sketch/1239015
 
+
+// BUTTONS AND BEYOND
+// https://github.com/processing/p5.js/wiki/Beyond-the-canvas
+// https://p5js.org/reference/#/p5.Element
+// https://youtu.be/QP7BTAlyMJo
 
 //  READ LATER
 // https://github.com/processing/p5.js/wiki/Optimizing-p5.js-Code-for-Performance

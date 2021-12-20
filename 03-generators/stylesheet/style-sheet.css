@@ -33,7 +33,7 @@ h1 {
 
 #toolbar-container {
     position: relative;
-    width: 250px;
+    max-width: 200px;
     height: auto;
     top: 40px;
     left: 20px; 
@@ -45,4 +45,23 @@ h1 {
 #option-tag {
     font-family: 'JetBrains Mono', monospace;
     padding: 10px;
+
+}
+#toolbar-container p {
+    padding: 10px;
+    font-family: 'JetBrains Mono', monospace;
+}
+
+.button {
+    background: transparent; /* Green */
+    border: 1px solid black;
+    color: rgb(0, 0, 0);
+    padding: 10px;
+    margin: 10px 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    cursor: pointer;
+
 }
