@@ -52,7 +52,7 @@ h1 {
     font-family: 'JetBrains Mono', monospace;
 }
 
-.button {
+.button-tag {
     background: transparent;
     border: 1px solid black;
     color: rgb(0, 0, 0);

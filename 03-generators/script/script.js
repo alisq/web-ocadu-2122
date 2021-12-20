@@ -44,7 +44,7 @@ function setup(){
   indCheck.parent('option-tag');
 
   clearBut = createButton('Remake');
-  clearBut.addClass('button');
+  clearBut.addClass('button-tag');
   clearBut.parent('toolbar-container');
   clearBut.mousePressed(resetCanvas);
 
